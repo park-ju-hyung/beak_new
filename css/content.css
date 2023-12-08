@@ -1,0 +1,265 @@
+.left-menu {
+  width: 220px;
+}
+
+.left-menu>p {
+  display: block;
+  height: 57px;
+  border-bottom: 2px solid #333333;
+  font-size: 26px;
+  font-weight: bold;
+  color: #111111;
+  line-height: 1;
+}
+
+input[id*="answer"] {
+  display: none;
+}
+
+input[id*="answer"]+label {
+  position: relative;
+  display: block;
+  padding: 20px;
+  color: #fff;
+  background: #fff;
+  cursor: pointer;
+  padding: 10px 40px 10px 10px;
+  color: #333333;
+}
+
+input[id*="answer"]+label.arrow-right {
+  position: relative;
+  display: block;
+  padding: 0px;
+  color: #fff;
+  background: #fff;
+  cursor: pointer;
+  color: #333333;
+}
+
+.left-menu-button {
+  border-bottom: 1px solid #dddddd;
+}
+
+.left-menu-button.on {
+  border-bottom: none;
+}
+
+.left-menu-button.arrow-right.on {
+  border-bottom: 1px solid #dddddd;
+}
+
+.left-menu-button.on+div>ul {
+  border-bottom: 1px solid #dddddd;
+}
+
+.left-menu-button.on em {
+  position: absolute;
+  top: 70%;
+  right: 10px;
+  width: 30px;
+  height: 12px;
+  margin-top: -15px;
+  display: inline-block;
+  background: url("../img/bg_lnb.png") no-repeat 100% -23px;
+}
+
+.icon.left-menu-button a::after {
+  margin-left: 10px;
+  margin-bottom: 6px;
+}
+
+input[id*="answer"]+label a {
+  font-size: 17px;
+  line-height: 20px;
+  color: #666666;
+}
+
+input[id*="answer"]+label:hover a:not(.page-now) {
+  color: #346d94;
+}
+
+input[id*="answer"]+label em {
+  position: absolute;
+  top: 70%;
+  right: 10px;
+  width: 30px;
+  height: 12px;
+  margin-top: -15px;
+  display: inline-block;
+  background: url(../img/bg_lnb.png) no-repeat 100% -2px;
+}
+
+input[id*="answer"]+label.arrow-right em {
+  background: url(../img/bg_lnb.png) no-repeat 100% -36px;
+}
+
+input[id*="answer"]+label.arrow-right:hover em {
+  background: url(../img/bg_lnb.png) no-repeat 100% -48px !important;
+}
+
+input[id*="answer"]+label.arrow-right a {
+  display: block;
+  width: 84%;
+  padding: 10px 25px 10px 10px;
+}
+
+input[id*="answer"]+label.left-menu-button:hover em {
+  position: absolute;
+  top: 70%;
+  right: 10px;
+  width: 30px;
+  height: 12px;
+  margin-top: -15px;
+  display: inline-block;
+  background: url(../img/bg_lnb.png) no-repeat 100% -14px;
+}
+
+input[id*="answer"]+label.left-menu-button.on:hover em {
+  position: absolute;
+  top: 70%;
+  right: 10px;
+  width: 30px;
+  height: 12px;
+  margin-top: -15px;
+  display: inline-block;
+  background: url("../img/bg_lnb.png") no-repeat 100% -23px;
+}
+
+input[id*="answer"]+label.page-now em {
+  position: absolute;
+  top: 70%;
+  right: 10px;
+  width: 30px;
+  height: 12px;
+  margin-top: -15px;
+  display: inline-block;
+  background: url(../img/bg_lnb.png) no-repeat 100% -23px;
+}
+
+input[id*="answer"]+label+div {
+  max-height: 0;
+  overflow: hidden;
+  font-size: 11px;
+}
+
+input[id*="answer"]+label+div p {
+  display: inline-block;
+  padding: 20px;
+}
+
+input[id*="answer"]:checked+label+div {
+  max-height: 220px;
+}
+
+.accordion ul li:hover {
+  background: #346d94;
+}
+
+.accordion ul li:hover a {
+  color: #ffff !important;
+}
+
+.accordion div ul li {
+  margin: 4px 0px;
+}
+
+.drop-on {
+  background: #346d94;
+  color: #ffffff;
+}
+
+.drop-on a {
+  color: #fff !important;
+}
+
+input[id*="answer"]:checked+label+div a {
+  display: block;
+  vertical-align: top;
+  color: #666666;
+  padding: 3px 30px;
+}
+
+input[id*="answer"]:checked+label+div ul li.icon:hover a::after {
+  background: url("../img/blt_newwin2.png") no-repeat right;
+  width: 11px;
+  height: 11px;
+  margin-left: 15px;
+  margin-bottom: 6px;
+  vertical-align: middle;
+  display: inline-block;
+  content: "";
+}
+
+.left-menu_box {
+  width: 220px;
+  padding: 0 20px;
+  border: 1px solid #c9cfd5;
+  background: #eff3f5;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.left-menu_box .call {
+  padding: 24px 0 15px 30px;
+  background: url(../img/bg_lnbbnr1.png) no-repeat 1px 25px;
+}
+
+.left-menu_box .call p:first-child {
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.left-menu_box .call p:nth-child(2) {
+  font-size: 18px;
+  line-height: 1;
+  color: #666666;
+}
+
+.left-menu_box .call p:nth-child(2) span {
+  font-size: 30px;
+  color: #286289;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.left-menu_box .info {
+  padding: 20px 0 22px 0;
+  border-top: 1px solid #c0c0c0;
+  font-weight: bold;
+}
+
+.left-menu_box .info ul li {
+  position: relative;
+}
+
+.left-menu_box .info ul li a {
+  display: block;
+}
+
+.left-menu_box .info ul li:nth-child(2) {
+  margin-top: 12px;
+}
+
+.map a::after {
+  position: absolute;
+  content: "";
+  background: url(../img/bg_lnbbnr2.png) no-repeat 0px 3px;
+  width: 16px;
+  height: 19px;
+  display: inline-block;
+  right: 0px;
+  top: 0px;
+}
+
+.excursion a::after {
+  position: absolute;
+  content: "";
+  background: url(../img/bg_lnbbnr2.png) no-repeat 0px -16px;
+  width: 16px;
+  height: 19px;
+  display: inline-block;
+  right: 0px;
+  top: 0px;
+}
