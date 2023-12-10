@@ -11,16 +11,34 @@
   <script defer src="./js/main.js"></script>
   <!--scroll js css-->
   <link rel="stylesheet" href="./css/slider.css">
-  <script defer src="./js/main.js"></script>
-  <!--scroll-->
+  <script defer src="./js/slider.js"></script>
   <script
     src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
   <link rel="canonical" href="https://codepen.io/ylem76/pen/bGoqjPJ" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
+  <!--rolling-banner-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
   <title>Main</title>
 </head>
+<script>
+  window.onload = function () {
+
+    function onClick() {
+      document.querySelector("body").style.overflow = 'visible';
+      document.querySelector("body").style.overflow = 'visible';
+    }
+    function offClick() {
+      document.querySelector("body").style.overflow = 'hidden';
+      document.querySelector("body").style.overflow = 'hidden';
+    }
+
+    document.querySelector('.background').addEventListener('click', onClick);
+    document.querySelector('.mobile-menu').addEventListener('click', offClick);
+    document.querySelector('.sidebar_content_out').addEventListener('click', onClick);
+  };
+</script>
 
 <body>
   <!--header-->
@@ -546,7 +564,7 @@
   <!-- 사이드 바-->
   <input type="checkbox" id="sidebar" />
 
-  <div class="sidebar_in pc">
+  <div class="sidebar_in pc" id="sidebar_in">
     <!--header-->
 
     <div class="sidebar_header">
@@ -1612,9 +1630,6 @@
 
 
     </div>
-
-
-
     </ul>
   </div>
 
@@ -1627,120 +1642,120 @@
 
   </div>
   <!--
-  <section class="content">
-    <div class="inner">
-      <div class="wrapper">
-        <div class="swiper mySwiper">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-              <a>
-                <img src="./img/Slider_1.jpg" alt="">
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a>
-                <img src="./img/Slider_2.jpg" alt="">
-              </a>
-            </li>
-            <li class="swiper-slide">
-              <a>
-                <img src="./img/Slider_3.jpg" alt="">
-              </a>
-            </li>
-          </ul>
-          <div class="swiper-pagination"></div>
+      <section class="content">
+        <div class="inner">
+          <div class="wrapper">
+            <div class="swiper mySwiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <a>
+                    <img src="./img/Slider_1.jpg" alt="">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a>
+                    <img src="./img/Slider_2.jpg" alt="">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a>
+                    <img src="./img/Slider_3.jpg" alt="">
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
 
 
-        </div>
-        <div class="btn-wrapper">
-          <button class="auto-start">slide autoplay start</button>
-          <button class="auto-stop">slide autoplay stop</button>
-        </div>
-      </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-      <script id="rendered-js">
-        $("document").ready(function () {
+            </div>
+            <div class="btn-wrapper">
+              <button class="auto-start">slide autoplay start</button>
+              <button class="auto-stop">slide autoplay stop</button>
+            </div>
+          </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+          <script id="rendered-js">
+            $("document").ready(function () {
           // 문서의 dom이 준비되면
           // .mySwiper 클래스를 swiper 슬라이더로 만듦
           // 이후에 swiper변수에 할당했기 때문에 스크립트로 제어할 수도 있음.
           var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
+              spaceBetween: 30,
             centeredSlides: true,
             autoplay: {
               delay: 2500,
-              disableOnInteraction: false,
+            disableOnInteraction: false,
             },
 
             // pagination 기본은 bullet
             pagination: {
               el: ".swiper-pagination",
-              clickable: true,
+            clickable: true,
             },
 
             // 좌우 화살표 navigation element 지정
             navigation: {
               nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev"
+            prevEl: ".swiper-button-prev"
             },
             // 반응형
             breakpoints: {
               // 600px 이하가 되면 슬라이드 간 간격을 0으로
               600: {
-                spaceBetween: 0
+              spaceBetween: 0
               },
             },
 
             on: {
               init: function () {
-                $('.swiper-slide').addClass('changed');
+              $('.swiper-slide').addClass('changed');
 
-                // fraction에 현재 인덱스와 전체 인덱스 표시
-                // this.loopedSlides는 loop, slidesPerView: 'auto'일 때 제대로 동작
-                $('.custom-fraction .current').text(this.realIndex + 1);
-                $('.custom-fraction .all').text(this.loopedSlides);
+            // fraction에 현재 인덱스와 전체 인덱스 표시
+            // this.loopedSlides는 loop, slidesPerView: 'auto'일 때 제대로 동작
+            $('.custom-fraction .current').text(this.realIndex + 1);
+            $('.custom-fraction .all').text(this.loopedSlides);
                 // console.log(this);
                 // console.log(this.loopedSlides)
               },
 
-              slideChangeTransitionStart: function () {
-                // 기본적으로 제공하는 swiper-slide-active 클래스를 이용해
-                // css transition 애니메이션 작성 가능하다.
-                // 다만 루프 모드일 때에는 루프 픽스를 하며 slide를 바꿔치기를 하는데,
-                // 이 때 플리커링이 발생할 수 있다.
-                // css transition을 서로 다르게 설정한 changed, changing 클래스를 이용
-                $('.swiper-slide').addClass('changing');
-                $('.swiper-slide').removeClass('changed');
+            slideChangeTransitionStart: function () {
+              // 기본적으로 제공하는 swiper-slide-active 클래스를 이용해
+              // css transition 애니메이션 작성 가능하다.
+              // 다만 루프 모드일 때에는 루프 픽스를 하며 slide를 바꿔치기를 하는데,
+              // 이 때 플리커링이 발생할 수 있다.
+              // css transition을 서로 다르게 설정한 changed, changing 클래스를 이용
+              $('.swiper-slide').addClass('changing');
+            $('.swiper-slide').removeClass('changed');
 
-                // 페이지 넘어갈 때마다 fraction 현재 인덱스 변경
-                $('.custom-fraction .current').text(this.realIndex + 1);
+            // 페이지 넘어갈 때마다 fraction 현재 인덱스 변경
+            $('.custom-fraction .current').text(this.realIndex + 1);
               },
 
-              slideChangeTransitionEnd: function () {
-                // changing : transition O
-                // changed : transition X
-                $('.swiper-slide').removeClass('changing');
-                $('.swiper-slide').addClass('changed');
+            slideChangeTransitionEnd: function () {
+              // changing : transition O
+              // changed : transition X
+              $('.swiper-slide').removeClass('changing');
+            $('.swiper-slide').addClass('changed');
               }
             },
           });
 
-          // 슬라이더 할당한 swiper로 슬라이더 제어
-          $(".auto-start").on("click", function () {
-            // 기본 설정으로 autoplay 시작
-            console.log("autoplay start");
+            // 슬라이더 할당한 swiper로 슬라이더 제어
+            $(".auto-start").on("click", function () {
+              // 기본 설정으로 autoplay 시작
+              console.log("autoplay start");
             swiper.autoplay.start();
           });
 
-          $(".auto-stop").on("click", function () {
-            console.log("autoplay stop");
+            $(".auto-stop").on("click", function () {
+              console.log("autoplay stop");
             swiper.autoplay.stop();
           });
         });
-      </script>
-    </div>
-  </section>
-  -->
+          </script>
+        </div>
+      </section>
+-->
   <!--content slide-->
 
   <!--service 맞춤서비스-->
@@ -2254,72 +2269,91 @@
 
         </div>
       </div>
+
+      <!--banner-->
       <div class="rolling-banner">
         <div class="rolling-banner_img">
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a href="">
+                <a href="javascript void(0)">
                   <img src="./img/banner-1.png" alt="배너1" />
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="">
+                <a href="javascript void(0)">
                   <img src="./img/banner-2.png" alt="배너2" />
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="">
+                <a href="javascript void(0)">
                   <img src="./img/banner-3.png" alt="배너3" />
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="">
+                <a href="javascript void(0)">
                   <img src="./img/banner-4.png" alt="배너4" />
                 </a>
               </div>
-              <!--
-                          <div class="swiper-slide">
-                            <img src="./img/banner-5.png" alt="배너5" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./img/banner-6.png" alt="배너6" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./img/banner-7.png" alt="배너7" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./img/banner-8.png" alt="배너8" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./img/banner-9.png" alt="배너9" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./img/banner-10.png" alt="배너10" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./img/banner-11.png" alt="배너11" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./img/banner-12.png" alt="배너12" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./img/banner-13.png" alt="배너13" />
-                          </div>
-                          -->
+              <div class="swiper-slide">
+                <a href="javascript void(0)">
+                  <img src="./img/banner-5.png" alt="배너5" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript void(0)">
+                  <img src="./img/banner-6.png" alt="배너6" />
+                </a>
+
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript void(0)">
+                  <img src="./img/banner-7.png" alt="배너7" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript void(0)">
+                  <img src="./img/banner-8.png" alt="배너8" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript void(0)">
+                  <img src="./img/banner-9.png" alt="배너9" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript void(0)">
+                  <img src="./img/banner-10.png" alt="배너10" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript void(0)">
+                  <img src="./img/banner-11.png" alt="배너11" />
+                </a>
+
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript void(0)">
+                  <img src="./img/banner-12.png" alt="배너12" />
+                </a>
+
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript void(0)">
+                  <img src="./img/banner-13.png" alt="배너13" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
         <div class="rolling-banner_button">
-
-
           <div class="swiper-prev">
             <button class="banner-left"></button>
           </div>
           <div class="swiper-next">
             <button class="banner-right"></button>
           </div>
-          <div>
+          <div class="swiper-detail">
             <button class="banner-detail"></button>
           </div>
         </div>

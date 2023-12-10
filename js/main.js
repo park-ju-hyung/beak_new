@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
 document.addEventListener("DOMContentLoaded", function () {
   const hz = document.querySelector("#hz");
   const toggleFadeButton = document.getElementById("toggleFadeButton2");
@@ -97,11 +98,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
-
-
-
-
-
 
 /** search **/
 $(".btn_sch").click(function () {
@@ -155,8 +151,5 @@ $(".mobile-sidebar-scroll > label").click(function (e) {
   el.siblings('label').removeClass("active");
   el.addClass("active");
 });
-
-
-
 
 

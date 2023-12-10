@@ -75,3 +75,27 @@ $("document").ready(function () {
     swiper.autoplay.stop();
   });
 });
+
+
+
+/** rolling-banner */
+new Swiper('.banner .swiper-container', {
+  // direction: 'horizontal', // 수평 슬라이드
+  autoplay: true, // 자동 재생 여부
+  loop: true, // 반복 재생 여부
+  spaceBetween: 30, // 슬라이드 사이 여백
+  slidesPerView: 4, // 한 번에 보여줄 슬라이드 개수
+  // slidesPerGroup: 5, // 한 번에 슬라이드 할 개수(전체 개수로 나뉘어야 함)
+    /* 
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    */
+
+  navigation: {
+      prevEl: '.banner .swiper-prev',
+      nextEl: '.banner .swiper-next'
+  }
+
+})
