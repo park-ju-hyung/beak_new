@@ -136,6 +136,28 @@ $(function () {
   }).filter(':eq(0)').click();
 });
 
+/* 전국 검찰청 찾기 */
+/** all-office **/
+$(".all-office_button>a").click(function(){
+  if($(this).hasClass("on")){ // 클릭한 요소가 clicked이라는 클래스명을 가지고 있을 때
+    $(this).removeClass("on");
+  }else{
+    $(this).addClass("on");
+  }
+});
+
+/** 검찰청 찾아보기**/
+const promotionEl = document.querySelector('.all-office_menu')
+const promotionToggleBtn = document.querySelector('.all-office_button')
+let isHidePromotion = false
+promotionToggleBtn.addEventListener('click', function () {
+  isHidePromotion = !isHidePromotion
+  if (isHidePromotion) {
+    promotionEl.classList.add('on')
+  } else {
+    promotionEl.classList.remove('on')
+  }
+})
 
 
 /* mb - 전체메뉴 */
