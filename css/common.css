@@ -596,6 +596,10 @@ label.menu {
   visibility: hidden;
   z-index: 99;
 }
+.background.on {
+  opacity: 0.2;
+  visibility: visible;
+}
 
 /* input 체크 */
 input#sidebar:checked ~ header label {
@@ -1269,3 +1273,12 @@ address > span:first-child::after {
 }
 
 /** footer **/
+
+.pop_wrap {
+  display: none;
+  position: absolute;
+}
+.pop_inner {
+  z-index: 99999999999;
+  position: relative;
+}

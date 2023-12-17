@@ -40,6 +40,11 @@
   };
 </script>
 
+
+
+
+
+
 <body>
   <!--header-->
   <section class="header">
@@ -2354,7 +2359,15 @@
             <button class="banner-right"></button>
           </div>
           <div class="swiper-detail">
-            <button class="banner-detail"></button>
+            <button id="detail-on" class="banner-detail"></button>
+            <div id="detail-layout" class="pop_wrap">
+
+              <div class="pop_inner">
+                <p class="dsc">팝업 안내문구 입니다.</p>
+                <button type="button" id="detail-out" class="btn_close">닫기</button>
+              </div>
+              <div class="background"></div>
+            </div>
           </div>
         </div>
       </div>

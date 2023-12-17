@@ -159,6 +159,60 @@ promotionToggleBtn.addEventListener('click', function () {
   }
 })
 
+/* banner-detail*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hz = document.querySelector("#detail-layout");
+  const toggleFadeButton = document.getElementById("detail-on");
+
+  let isFadeVisible = true;
+  /** */
+  toggleFadeButton.addEventListener("click", function () {
+    hz.style.transition = "opacity 0.5s ease";
+    if (isFadeVisible) {
+      hz.style.opacity = "1";
+      hz.style.zIndex = "101";
+      hz.style.display = "block";
+    } 
+    isFadeVisible = !isFadeVisible;
+  });
+
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hz = document.querySelector("#detail-layout");
+  const toggleFadeButton = document.getElementById("detail-out");
+
+  let isFadeVisible = true;
+  /** */
+  toggleFadeButton.addEventListener("click", function () {
+    hz.style.transition=this.style = "opacity 0.5s ease";
+    if (isFadeVisible) {
+      hz.style.opacity = "0";
+    } 
+    isFadeVisible = !isFadeVisible;
+  });
+
+});
+
+$(".banner-detail").click(function () {
+  if ($(".background").hasClass("on")) { // 클릭한 요소가 clicked이라는 클래스명을 가지고 있을 때
+    $(".background").removeClass("on");
+  } else {
+    $(".background").addClass("on");
+  }
+});
+
+$("#detail-out").click(function () {
+  if ($(".background").hasClass("on")) { // 클릭한 요소가 clicked이라는 클래스명을 가지고 있을 때
+    $(".background").removeClass("on");
+  } else {
+    $(".background").addClass("on");
+  }
+});
+
+
 
 /* mb - 전체메뉴 */
 $(".mobilesidebar-content2").click(function (e) {
