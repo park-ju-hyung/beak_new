@@ -48,15 +48,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobilemenu = document.querySelector(".mobile-menu");
 
   let isFadeVisible = true;
+
+
   /** */
   toggleFadeButton.addEventListener("click", function () {
+    alert("t1");
     hz.style.transition = "opacity 0.5s ease";
+
+    alert("isFadeVisible : "+isFadeVisible);
+
     if (isFadeVisible) {
-      hz.style.opacity = "0";
-    } else {
+      alert("t11");
       hz.style.opacity = "1";
+    } else {
+      alert("t12");
+      hz.style.opacity = "0";
       hz.style.zIndex = "101";
     }
+    alert("!isFadeVisible : "+!isFadeVisible);
     isFadeVisible = !isFadeVisible;
   });
 
@@ -82,13 +91,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const hz = document.querySelector("#hz");
-  const toggleFadeButton = document.getElementById("toggleFadeButton2");
+  const toggleFadeButton2 = document.getElementById("toggleFadeButton2");
   const mainheader = document.querySelector(".mainheader");
   const mobilemenu = document.querySelector(".mobile-menu");
 
   let isFadeVisible = true;
   /** */
-  toggleFadeButton.addEventListener("click", function () {
+  toggleFadeButton2.addEventListener("click", function () {
+    alert("t2");
     hz.style.transition = "opacity 0.5s ease";
     if (isFadeVisible) {
       hz.style.opacity = "0";
@@ -164,6 +174,8 @@ promotionToggleBtn.addEventListener('click', function () {
 document.addEventListener("DOMContentLoaded", function () {
   const hz = document.querySelector("#detail-layout");
   const toggleFadeButton = document.getElementById("detail-on");
+   
+
 
   let isFadeVisible = true;
   /** */
@@ -205,6 +217,7 @@ $(".banner-detail").click(function () {
 });
 
 $("#detail-out").click(function () {
+  alert("dout");
   if ($(".background").hasClass("on")) { // 클릭한 요소가 clicked이라는 클래스명을 가지고 있을 때
     $(".background").removeClass("on");
   } else {
