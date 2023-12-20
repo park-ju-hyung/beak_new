@@ -17,6 +17,9 @@
   <link rel="canonical" href="https://codepen.io/ylem76/pen/bGoqjPJ" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
   <!--rolling-banner-->
   <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
@@ -37,6 +40,22 @@
     document.querySelector('.background').addEventListener('click', onClick);
     document.querySelector('.mobile-menu').addEventListener('click', offClick);
     document.querySelector('.sidebar_content_out').addEventListener('click', onClick);
+  };
+</script>
+<script>
+  window.onload = function () {
+
+    function onClick() {
+      document.querySelector('.auto-start').style.display = 'block';
+      document.querySelector('.auto-stop').style.display = 'none';
+    }
+    function offClick() {
+      document.querySelector('.auto-start').style.display = 'none';
+      document.querySelector('.auto-stop').style.display = 'block';
+    }
+
+    document.querySelector('.auto-start').addEventListener('click', offClick);
+    document.querySelector('.auto-stop').addEventListener('click', onClick);
   };
 </script>
 
@@ -1682,7 +1701,7 @@
         <div class="slide-button">
           <div class="swiper-pagination"></div>
           <div class="btn-wrapper">
-            <button class="auto-start">
+            <button class="auto-start" style="display: none;">
               <img src="./img/btn_rollplay.png" alt="">
             </button>
             <button class="auto-stop">
@@ -1693,87 +1712,7 @@
         </div>
 
       </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-      <script id="rendered-js">
-        $("document").ready(function () {
-          // 문서의 dom이 준비되면
-          // .mySwiper 클래스를 swiper 슬라이더로 만듦
-          // 이후에 swiper변수에 할당했기 때문에 스크립트로 제어할 수도 있음.
-          var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-              delay: 2500,
-              disableOnInteraction: false,
-            },
 
-            // pagination 기본은 bullet
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-
-            // 좌우 화살표 navigation element 지정
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev"
-            },
-            // 반응형
-            breakpoints: {
-              // 600px 이하가 되면 슬라이드 간 간격을 0으로
-              600: {
-                spaceBetween: 0
-              },
-            },
-
-            on: {
-              init: function () {
-                $('.swiper-slide').addClass('changed');
-
-                // fraction에 현재 인덱스와 전체 인덱스 표시
-                // this.loopedSlides는 loop, slidesPerView: 'auto'일 때 제대로 동작
-                $('.custom-fraction .current').text(this.realIndex + 1);
-                $('.custom-fraction .all').text(this.loopedSlides);
-                // console.log(this);
-                // console.log(this.loopedSlides)
-              },
-
-              slideChangeTransitionStart: function () {
-                // 기본적으로 제공하는 swiper-slide-active 클래스를 이용해
-                // css transition 애니메이션 작성 가능하다.
-                // 다만 루프 모드일 때에는 루프 픽스를 하며 slide를 바꿔치기를 하는데,
-                // 이 때 플리커링이 발생할 수 있다.
-                // css transition을 서로 다르게 설정한 changed, changing 클래스를 이용
-                $('.swiper-slide').addClass('changing');
-                $('.swiper-slide').removeClass('changed');
-
-                // 페이지 넘어갈 때마다 fraction 현재 인덱스 변경
-                $('.custom-fraction .current').text(this.realIndex + 1);
-              },
-
-              slideChangeTransitionEnd: function () {
-                // changing : transition O
-                // changed : transition X
-                $('.swiper-slide').removeClass('changing');
-                $('.swiper-slide').addClass('changed');
-              }
-            },
-          });
-
-          // 슬라이더 할당한 swiper로 슬라이더 제어
-          $(".auto-start").on("click", function () {
-            // 기본 설정으로 autoplay 시작
-            console.log("autoplay start");
-            swiper.autoplay.start();
-          });
-
-          $(".auto-stop").on("click", function () {
-            console.log("autoplay stop");
-            swiper.autoplay.stop();
-          });
-        });
-      </script>
     </div>
   </section>
 
@@ -2368,6 +2307,10 @@
           </div>
         </div>
         <div class="rolling-banner_button">
+          <div class="banner-auto">
+            <button class="auto-start">1</button>
+            <button class="auto-stop">2</button>
+          </div>
           <div class="swiper-prev">
             <button class="banner-left"></button>
           </div>
@@ -2850,7 +2793,7 @@
       <ul>
         <li class="footer_logo">
           <a href="javascript:void(0)">
-            <img src="../beak-1/img/bg_footerlogo.png" alt="">
+            <img src="../beak_new/img/bg_footerlogo.png" alt="">
           </a>
         </li>
         <li class="menu">
