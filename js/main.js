@@ -128,7 +128,7 @@ $(".mainheader").mouseover(function () {
 $(function () {
   $('.tab_content > div').hide();
   $('.tab_nav a').click(function () {
-    $('.tab_content > div').hide().filter(this.hash).fadeIn();
+    $('.tab_content > div').hide().filter(this.hash).show();
     $('.tab_nav a').removeClass('active');
     $(this).addClass('active');
     return false;
@@ -139,7 +139,7 @@ $(function () {
 $(function () {
   $('.notice_content > div').hide();
   $('.notice_nav a').click(function () {
-    $('.notice_content > div').hide().filter(this.hash).fadeIn();
+    $('.notice_content > div').hide().filter(this.hash).show();
     $('.notice_nav a').removeClass('active');
     $(this).addClass('active');
     return false;

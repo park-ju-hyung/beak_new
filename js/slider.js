@@ -85,7 +85,7 @@ $("document").ready(function () {
   // .mySwiper 클래스를 swiper 슬라이더로 만듦
   // 이후에 swiper변수에 할당했기 때문에 스크립트로 제어할 수도 있음.
   var swiper = new Swiper('.banner .swiper-container', {
-        spaceBetween: 30,
+        // spaceBetween: 30,
         centeredSlides: true,
         slidesPerView: 4, 
         loop: true, // 반복 재생 여부

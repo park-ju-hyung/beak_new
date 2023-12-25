@@ -27,6 +27,14 @@ ul li {
   margin: 0 auto;
 }
 
+p {
+  padding: 0px;
+  margin: 0px;
+}
+input:focus,
+select:focus {
+  outline: none;
+}
 /** header **/
 .header {
   width: 100%;
