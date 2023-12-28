@@ -1,3 +1,28 @@
+/**common**/
+.dib > li {
+  display: inline-block;
+  vertical-align: top;
+}
+.sub-title {
+  font-size: 17px !important;
+  font-weight: bold;
+  line-height: 22px;
+  color: #013e68 !important;
+  margin: 25px 0 12px 0 !important;
+}
+
+.sub-title2 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.span-bold {
+  font-weight: bold;
+}
+
 .header2 {
   border-bottom: 1px solid #dddddd;
 }
@@ -5,6 +30,16 @@
   display: flex;
   justify-content: space-between;
 }
+
+.content-box5 {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #e4e4e4;
+  background-color: #fff;
+}
+
+/**common**/
+
 .visual_img01 {
   background: url("../img/top_visual01.png") no-repeat center top;
   overflow: hidden;
@@ -64,10 +99,12 @@
   color: #111111;
   line-height: 1;
 }
-input[id*="answer"] {
+input[id*="answer"],
+input[id*="leftmenu"] {
   display: none;
 }
-input[id*="answer"] + label {
+input[id*="answer"] + label,
+input[id*="leftmenu"] + label {
   position: relative;
   display: block;
   padding: 20px;
@@ -77,7 +114,8 @@ input[id*="answer"] + label {
   padding: 10px 40px 10px 10px;
   color: #333333;
 }
-input[id*="answer"] + label.arrow-right {
+input[id*="answer"] + label.arrow-right,
+input[id*="leftmenu"] + label.arrow-right {
   position: relative;
   display: block;
   padding: 0px;
@@ -113,15 +151,18 @@ input[id*="answer"] + label.arrow-right {
   margin-bottom: 6px;
 }
 
-input[id*="answer"] + label a {
+input[id*="answer"] + label a,
+input[id*="leftmenu"] + label a {
   font-size: 17px;
   line-height: 20px;
   color: #666666;
 }
-input[id*="answer"] + label:hover a:not(.page-now) {
+input[id*="answer"] + label:hover a:not(.page-now),
+input[id*="leftmenu"] + label:hover a:not(.page-now) {
   color: #346d94;
 }
-input[id*="answer"] + label em {
+input[id*="answer"] + label em,
+input[id*="leftmenu"] + label em {
   position: absolute;
   top: 70%;
   right: 10px;
@@ -131,18 +172,22 @@ input[id*="answer"] + label em {
   display: inline-block;
   background: url(../img/bg_lnb.png) no-repeat 100% -2px;
 }
-input[id*="answer"] + label.arrow-right em {
+input[id*="answer"] + label.arrow-right em,
+input[id*="leftmenu"] + label.arrow-right em {
   background: url(../img/bg_lnb.png) no-repeat 100% -36px;
 }
-input[id*="answer"] + label.arrow-right:hover em {
+input[id*="answer"] + label.arrow-right:hover em,
+input[id*="leftmenu"] + label.arrow-right:hover em {
   background: url(../img/bg_lnb.png) no-repeat 100% -48px !important;
 }
-input[id*="answer"] + label.arrow-right a {
+input[id*="answer"] + label.arrow-right a,
+input[id*="leftmenu"] + label.arrow-right a {
   display: block;
   width: 84%;
   padding: 10px 25px 10px 10px;
 }
-input[id*="answer"] + label.left-menu-button:hover em {
+input[id*="answer"] + label.left-menu-button:hover em,
+input[id*="leftmenu"] + label.left-menu-button:hover em {
   position: absolute;
   top: 70%;
   right: 10px;
@@ -152,7 +197,8 @@ input[id*="answer"] + label.left-menu-button:hover em {
   display: inline-block;
   background: url(../img/bg_lnb.png) no-repeat 100% -14px;
 }
-input[id*="answer"] + label.left-menu-button.on:hover em {
+input[id*="answer"] + label.left-menu-button.on:hover em,
+input[id*="leftmenu"] + label.left-menu-button.on:hover em {
   position: absolute;
   top: 70%;
   right: 10px;
@@ -163,7 +209,8 @@ input[id*="answer"] + label.left-menu-button.on:hover em {
   background: url("../img/bg_lnb.png") no-repeat 100% -23px;
 }
 
-input[id*="answer"] + label.page-now em {
+input[id*="answer"] + label.page-now em,
+input[id*="leftmenu"] + label.page-now em {
   position: absolute;
   top: 70%;
   right: 10px;
@@ -173,18 +220,21 @@ input[id*="answer"] + label.page-now em {
   display: inline-block;
   background: url(../img/bg_lnb.png) no-repeat 100% -23px;
 }
-input[id*="answer"] + label + div {
+input[id*="answer"] + label + div,
+input[id*="leftmenu"] + label + div {
   max-height: 0;
   overflow: hidden;
   font-size: 11px;
 }
 
-input[id*="answer"] + label + div p {
+input[id*="answer"] + label + div p,
+input[id*="leftmenu"] + label + div p {
   display: inline-block;
   padding: 20px;
 }
 
-input[id*="answer"]:checked + label + div {
+input[id*="answer"]:checked + label + div,
+input[id*="leftmenu"]:checked + label + div {
   max-height: 220px;
 }
 
@@ -205,13 +255,15 @@ input[id*="answer"]:checked + label + div {
   color: #fff !important;
 }
 
-input[id*="answer"]:checked + label + div a {
+input[id*="answer"]:checked + label + div a,
+input[id*="leftmenu"]:checked + label + div a {
   display: block;
   vertical-align: top;
   color: #666666;
   padding: 3px 30px;
 }
-input[id*="answer"]:checked + label + div ul li.icon:hover a::after {
+input[id*="answer"]:checked + label + div ul li.icon:hover a::after,
+input[id*="leftmenu"]:checked + label + div ul li.icon:hover a::after {
   background: url("../img/blt_newwin2.png") no-repeat right;
   width: 11px;
   height: 11px;
@@ -327,6 +379,7 @@ input[id*="answer"]:checked + label em {
   color: #013e68;
   font-weight: bold;
 }
+/*
 .content-box2 P:first-child {
   font-size: 18px;
   font-weight: bold;
@@ -334,25 +387,27 @@ input[id*="answer"]:checked + label em {
   color: #333333;
   margin-bottom: 15px;
 }
-.content-box2 ul li:first-child {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 22px;
-  color: #013e68;
-  margin: 25px 0 12px 0 !important;
-}
+*/
 .content-box2 ul li:not(:first-child),
 .content-box2 ul li:not(:nth-child(2)),
 .content-box4 ul li {
   margin-top: 10px;
 }
-.content-box2 ul li:not(:first-child):before,
+
+.content-box2 ul li:before,
 .content-box4 ul li:before {
   content: "";
-  padding: 0 0 0 13px;
-  background: url("../img/blt_list.png") no-repeat 0 9px;
+  margin-right: 5px;
+  background: url("../img/blt_list.png") no-repeat;
   color: #666666;
+  display: block;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 3px;
+  top: 7px;
 }
+
 .content-box2 ul li a {
   text-decoration: underline;
 }
@@ -645,16 +700,16 @@ p.kios_text_bottom::before {
   padding-left: 7px;
   background-repeat: no-repeat;
 }
-.form-2 > p {
+.form-2_search + p {
   color: #666666;
   font-size: 16px;
   margin-bottom: 20px;
 }
-
-#form-2 > div > p > span {
+.form-2_search + p > span {
   color: #015a91;
   font-weight: bold;
 }
+
 .form-2_table {
   border-top: 2px solid #333333;
   width: 100%;
@@ -838,7 +893,10 @@ p.accident_text_bottom::before {
   top: 0px;
 }
 .content-box2 ul li {
-  font-size: 15px;
+  font-size: 12px;
+  position: relative;
+  padding-left: 15px;
+  color: #666666;
 }
 .content-box2 ul li span,
 .content-box2 ul li span {
@@ -1066,3 +1124,200 @@ p.accident_text_bottom::before {
   width: 16px;
   height: 12px;
 }
+.ullist_adsys_title {
+  margin: 35px 0 12px 0 !important;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #013e68;
+}
+.ullist_adsys_title::before {
+  content: none !important;
+}
+
+/** 적극행정 소식란 **/
+.content-box1.news_img::after {
+  content: "";
+  background: url(../img/ico_deco14.png) no-repeat;
+  display: block;
+  width: 125px;
+  height: 75px;
+  position: absolute;
+  right: 25px;
+  top: 35px;
+}
+.content-box1.news_img ul {
+  font-size: 15px;
+}
+.content-box1.news_img ul li {
+  margin: 5px 0px;
+}
+.content-box1.news_img ul li a {
+  text-decoration: underline;
+}
+
+/** 이용안내 **/
+
+.content-box2 > .info_use > li::before {
+  content: none;
+}
+.content-box2 > .info_use > li {
+  padding-left: 0px;
+  width: 300px;
+  display: inline-block;
+}
+
+/** 내의견 보기 **/
+
+.dib.dib_op > li {
+  padding: 0 40px;
+}
+.dib.dib_op > li:first-child {
+  border-right: 1px solid #ddd;
+}
+.dib.dib_op > li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  color: #666;
+  letter-spacing: -1px;
+  font-size: 12px;
+  line-height: 1px;
+  line-height: 20px;
+  width: 300px;
+}
+.dib.dib_op > li > p:first-child {
+  font-size: 16px;
+  font-weight: bold;
+}
+.dib.dib_op > li > ul {
+  margin-top: 8px;
+}
+
+.ipin,
+.realname {
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  position: relative;
+}
+.ipin {
+  margin-top: 20px;
+  background-color: #007ba0;
+}
+.ipin::before {
+  content: "";
+  background-image: url("../img/ico_certi1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 46px;
+  top: 9px;
+  width: 80px;
+  height: 50px;
+  background-size: 50px 32px;
+}
+.realname {
+  margin-top: 40px;
+  background-color: #008390;
+}
+.realname::before {
+  content: "";
+  background-image: url("../img/ico_certi2.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  width: 80px;
+  height: 50px;
+  background-size: 50px 32px;
+}
+.content-box5 > .dib > li > ul > .sub-title {
+  margin: 0px !important;
+}
+.content-box5 > .dib > li > ul > li {
+  font-size: 12px;
+  color: #666;
+}
+.install {
+  height: 48px;
+  padding: 0 30px;
+  border-radius: 2px;
+  background-color: #074a73;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 48px;
+  text-align: center;
+  vertical-align: top;
+  display: block;
+  margin: 10px 0px;
+  position: relative;
+  width: 150px;
+}
+.install::before {
+  content: "";
+  background-image: url("../img/blt_docdown.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 17px;
+  height: 15px;
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
+}
+
+/** 국민감동직원추천 **/
+.content-box1.Employee_img::after {
+  content: "";
+  background: url(../img/ico_deco12.png) no-repeat;
+  display: block;
+  width: 125px;
+  height: 75px;
+  position: absolute;
+  right: 25px;
+  top: 35px;
+}
+.recommand {
+  margin: 50px 0;
+  text-align: center;
+  background-image: url("../img/bg_guide_recomm.png");
+  height: 210px;
+}
+.recommand > p {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 40px;
+  margin-bottom: 15px;
+}
+.recommand > ul > li:nth-child(3) {
+  margin-top: 20px;
+}
+.recommand > ul > li:nth-child(3) > .dib > li > a {
+  display: inline-block;
+  min-width: 90px;
+  height: 35px;
+  padding: 0 20px;
+  border: 1px solid #074a73;
+  border-radius: 2px;
+  background: #ffffff;
+  color: #074a73;
+  font-size: 14px;
+  line-height: 35px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+.recommand > ul > li:nth-child(3) > .dib > li > a:after {
+  content: "";
+  background-image: url(../img/blt_goto.png);
+  width: 17px;
+  height: 18px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 10px 6px;
+}
+/* 자유발언대 */

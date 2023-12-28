@@ -11,7 +11,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script defer src="../js/main.js"></script>
 
-  <title>적극행정제도 소개</title>
+  <title>내의견 보기</title>
 </head>
 <script>
   window.onload = function () {
@@ -960,8 +960,8 @@
             </div>
             <div class="mobile-sidebar-scroll">
               <!--민원안내-->
-              <input type="radio" name="accordion" id="answer01" />
-              <label for="answer01">
+              <input type="radio" name="accordion" id="leftmenu01" />
+              <label for="leftmenu01">
                 <a class="dep-title">민원안내</a>
               </label>
               <div class="dep-mb">
@@ -994,8 +994,8 @@
                 </ul>
               </div>
               <!--일반민원-->
-              <input type="radio" name="accordion" id="answer02" />
-              <label for="answer02">
+              <input type="radio" name="accordion" id="leftmenu02" />
+              <label for="leftmenu02">
                 <a class="dep-title">일반민원</a>
               </label>
               <div class="dep-mb">
@@ -1015,13 +1015,13 @@
                 </ul>
               </div>
               <!--제증명민원-->
-              <input type="radio" name="accordion" id="answer03" />
-              <label for="answer03">
+              <input type="radio" name="accordion" id="leftmenu03" />
+              <label for="leftmenu03">
                 <a class="dep-title2 plusicon">제증명민원</a>
               </label>
               <!--벌과금/사건검색-->
-              <input type="radio" name="accordion" id="answer04" />
-              <label for="answer04">
+              <input type="radio" name="accordion" id="leftmenu04" />
+              <label for="leftmenu04">
                 <a class="dep-title">벌과금/사건검색</a>
               </label>
               <div class="dep-mb">
@@ -1041,20 +1041,20 @@
                 </ul>
               </div>
               <!--자주묻는질문-->
-              <input type="radio" name="accordion" id="answer05" />
-              <label for="answer05">
+              <input type="radio" name="accordion" id="leftmenu05" />
+              <label for="leftmenu05">
                 <a class="dep-title2"
                   href="https://www.coupang.com/?src=1139000&spec=10799999&addtag=900&ctag=HOME&lptag=AF6919774&itime=20231128112248&pageType=HOME&pageValue=HOME&wPcid=17011381680152155604667&wRef=&wTime=20231128112248&redirect=landing&traceid=V0-183-879dd1202e5c73b2&mcid=b5f667aa166748c68092d9d1996d2a95&placementid=&campaignid=&contentcategory=&imgsize=&tsource=&pageid=&deviceid=&token=&contenttype=&subid=ahnfavorite&impressionid=&campaigntype=&newssource=&contentkeyword=&subparam=">자주묻는질문</a>
               </label>
               <!--자유발언대-->
-              <input type="radio" name="accordion" id="answer06" />
-              <label for="answer06">
+              <input type="radio" name="accordion" id="leftmenu06" />
+              <label for="leftmenu06">
                 <a class="dep-title2"
                   href="https://www.coupang.com/?src=1139000&spec=10799999&addtag=900&ctag=HOME&lptag=AF6919774&itime=20231128112248&pageType=HOME&pageValue=HOME&wPcid=17011381680152155604667&wRef=&wTime=20231128112248&redirect=landing&traceid=V0-183-879dd1202e5c73b2&mcid=b5f667aa166748c68092d9d1996d2a95&placementid=&campaignid=&contentcategory=&imgsize=&tsource=&pageid=&deviceid=&token=&contenttype=&subid=ahnfavorite&impressionid=&campaigntype=&newssource=&contentkeyword=&subparam=">자유발언대</a>
               </label>
               <!--감동직원추천-->
-              <input type="radio" name="accordion" id="answer07" />
-              <label for="answer07">
+              <input type="radio" name="accordion" id="leftmenu07" />
+              <label for="leftmenu07">
                 <a class="dep-title">감동직원추천</a>
               </label>
               <div class="dep-mb">
@@ -1639,7 +1639,7 @@
         </a>
         <a href="">참여민원</a>
         <a href="">민원안내</a>
-        <span>적극행정제도 소개</span>
+        <span>이용안내</span>
       </div>
       <div class="print">
         <a href="">
@@ -1656,8 +1656,8 @@
         <p>참여민원</p>
         <div class="accordion">
           <!--민원안내-->
-          <input type="checkbox" id="answer01" checked="checked" onclick="return false" />
-          <label for="answer01" class="page-now">
+          <input type="checkbox" id="answer01" />
+          <label for="answer01" class="left-menu-button">
             <a href="javascript:void(0)">민원안내</a>
             <em></em>
           </label>
@@ -1681,7 +1681,7 @@
               <li>
                 <a href="javascript:void(0)"> 민원안내전화 </a>
               </li>
-              <li class="drop-on">
+              <li>
                 <a href="javascript:void(0)"> 적극행정제도 소개 </a>
               </li>
               <li>
@@ -1758,20 +1758,20 @@
           </label>
           <!--자유발언대-->
           <!--감동직원추천-->
-          <input type="checkbox" id="answer07" />
-          <label for="answer07" class="left-menu-button">
+          <input type="checkbox" id="answer07" checked="checked" onclick="return false" />
+          <label for="answer07" class="page-now">
             <a href="javascript:void(0)">감동직원추천</a>
             <em></em>
           </label>
           <div>
             <ul>
-              <li class="drop-on">
+              <li>
                 <a href="javascript:void(0)"> 감동직원추천 </a>
               </li>
               <li>
                 <a href="javascript:void(0)"> 추천서 작성하기 </a>
               </li>
-              <li>
+              <li class="drop-on">
                 <a href="javascript:void(0)"> 내의견 보기 </a>
               </li>
             </ul>
@@ -1800,112 +1800,59 @@
       </div>
 
       <div class="content">
-        <p>적극행정제도 소개</p>
+        <p>내의견 보기</p>
         <div class="content-box2">
-          <ul class="content_ullist_adsys">
-            <li>
-              <p>
-                <span>01</span>
-                적극행정의 정의
-              </p>
-            </li>
-            <li>
-              공무원이 불합리한 규제의 개선 등 공공의 이익을 위하여 창의성과 전문성을 바탕으로 적극적으로 업무를 처리하는 행위
-            </li>
-          </ul>
+          <p class="sub-title2">안내</p>
+          <p>안녕하세요. 검찰청 홈페이지를 방문해 주셔서 감사합니다.</p>
+          <p>
+            <span class="span-bold">아이핀(I-PIN)</span> 또는 <span class="span-bold">안심실명 인증하기</span>
+            중 선택하여 인증 후, 서비스를 이용하시기 바랍니다.
+          </p>
         </div>
         <div class="content-box3">
-          <ul>
-            <li style="text-align: center; font-weight: bold;">
-              <근거규정>
-            </li>
-            <li>헌법제7조①공무원은 국민전체에 대한 봉사자이며, 국민에 대하여 책임을 진다.</li>
-            <li>국가공무원법 제56조(성실의무)모든 공무원은 법령을 준수하며 성실히 직무를 수행하여야 한다.</li>
-          </ul>
-        </div>
-        <div class="content-box2">
-          <ul class="content_ullist_adsys">
+          <ul class="dib dib_op">
             <li>
-              <p>
-                <span>02</span>
-                적극행정 유형(예시)
-              </p>
-            </li>
-            <li class="ullist_adsys_title">
-              행태적 측면
+              <p>아이핀 인증</p>
+              <ul>
+                <li>아이핀(I-PIN)은 인터넷상의 개인식별번호를 의미하며,</li>
+                <li>대면확인이 어려운 인터넷에서 주민등록번호를 사용하지</li>
+                <li>않고도 본인임을 확인할 수 있는 개인정보보호 서비스입니다.</li>
+              </ul>
+              <a href="javsscript void(0)" class="ipin">
+                아이핀 인증하기
+              </a>
+
             </li>
             <li>
-              통상적으로 요구되는 노력이나 주의 의무 이상을 기울여 맡은 바 임무를 최선을 다해 수행하는 행위 등
-            </li>
-            <li>
-              업무관행을 반복하지 않고 가능한 최선의 방법을 찾아 업무를 처리하는 행위 등
-            </li>
-            <li>
-              새로운 행정수요나 행정환경 변화에 선제적으로 대응하여 새로운 정책을 발굴·추진하는 행위 등
-            </li>
-          </ul>
-          <ul class="content_ullist_adsys">
-            <li>
-              <p>
-                <span>03</span>
-                소극행정의 정의
-              </p>
-            </li>
-            <li>
-              공무원의 부작위 또는 직무태만 등으로 국민의 권익을 침해하거나 국가 재정상 손실을 발생하게 하는 행위
+              <p>안심실명 인증</p>
+              <ul>
+                <li>실명인증을 위해 입력된 정보는</li>
+                <li>실명 일치 여부 확인에만 사용 됩니다.</li>
+              </ul>
+              <a href="javsscript void(0)" class="realname">
+                안심설명 인증하기
+              </a>
             </li>
           </ul>
         </div>
-        <div class="content-box3">
-          <ul>
-            <li style="text-align: center; font-weight: bold;">
-              <법적근거>
+        <div class="content-box5">
+          <ul class="dib">
+            <li>
+              <ul>
+                <li class="sub-title">키보드보안프로그램 설치</li>
+                <li>키보드로 입력되는 정보가 유출되거나 변조되지 않도록 보호해주는 프로그램입니다. 설치하지 않으셔도 홈페이지 이용에</li>
+                <li>아무런 지장이 없으나 보다 안전한 개인정보 보호를 위해 설치를 권장합니다.</li>
+              </ul>
             </li>
-            <li>공무원 징계령 시행규칙(총리령)[별표1]징계기준</li>
-            <li>"소극행정"이란 공무원의 부작위 또는 직무태만으로 국민의 권익침해 또는 국가 재정상의 손실이 발생하게 하는 업무형태를 말한다.</li>
+            <li>
+              <a href="javascript void(0)" class="install">
+                설치하기
+              </a>
+            </li>
           </ul>
         </div>
-        <div class="content-box2">
-          <ul class="content_ullist_adsys">
-            <li>
-              <p>
-                <span>04</span>
-                소극행정 유형
-              </p>
-            </li>
-            <li class="ullist_adsys_title">
-              적당편의
-            </li>
-            <li>
-              문제해결을 위해 노력하지 않고, 적당히 형식만 갖추어 부실하게 처리하는 형태
-            </li>
-            <li class="ullist_adsys_title">
-              업무해태
-            </li>
-            <li>
-              합리적인 이유 없이 주어진 업무를 게을리 하거나 불이행하는 행태
-            </li>
-            <li class="ullist_adsys_title">
-              탁상행정
-            </li>
-            <li>
-              법령이나 지침 등의 변화에도 불구하고 과거 규정에 따라 업무를 처리하거나, 기존의 불합리한 업무관행을 그대로 답습하는 행태
-            </li>
-            <li class="ullist_adsys_title">
-              기타 관중심 행정
-            </li>
-            <li>
-              직무권한을 이용하여 부당하게 업무를 처리하거나, 국민 편익을 위해서가 아닌 자신의 조직이나 이익만을 중시하여 자외적으로 처리하는 행태
-            </li>
 
 
-
-
-
-
-          </ul>
-
-        </div>
 
 
 
