@@ -4,11 +4,11 @@
   vertical-align: top;
 }
 .sub-title {
-  font-size: 17px !important;
+  font-size: 17px;
   font-weight: bold;
   line-height: 22px;
   color: #013e68 !important;
-  margin: 25px 0 12px 0 !important;
+  margin: 25px 0 12px 0;
 }
 
 .sub-title2 {
@@ -17,6 +17,15 @@
   line-height: 23px;
   color: #333333;
   margin-bottom: 15px;
+}
+
+.sub-title3 {
+  display: block;
+  padding-bottom: 10px;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #074a73;
 }
 
 .span-bold {
@@ -759,6 +768,35 @@ p.kios_text_bottom::before {
   height: 12px;
   background-color: #dddddd;
 }
+.pagination > .prev {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #c0c0c0;
+  background: url("../img/btn_paging_m.png") no-repeat top left;
+  background-size: 80px 132px;
+  text-indent: -9999px;
+  vertical-align: top;
+  background-position: 0 -66px;
+  padding: 0px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.pagination > .prev2::before {
+  content: none;
+}
+.pagination > .prev2 {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #c0c0c0;
+  background: url("../img/btn_paging_m.png") no-repeat top left;
+  background-size: 80px 132px;
+  text-indent: -9999px;
+  vertical-align: top;
+  background-position: 0 -66px;
+  padding: 0px;
+  display: inline-block;
+}
+
 /* 사건처리절차 안내 */
 .accident_text_bottom {
   font-size: 14px;
@@ -812,6 +850,14 @@ p.accident_text_bottom::before {
   padding: 0px;
   height: 0px;
 }
+.form-2_table > tbody > tr > td > a {
+  position: relative;
+}
+.form-2_table > tbody > tr > td > a:hover {
+  text-decoration: underline;
+  color: #074a73;
+}
+
 .content-box4.accident > p:first-child {
   font-size: 18px;
   font-weight: bold;
@@ -1320,4 +1366,78 @@ p.accident_text_bottom::before {
   background-repeat: no-repeat;
   background-position: 10px 6px;
 }
+
 /* 자유발언대 */
+.content-box1.document_img::after {
+  content: "";
+  background: url(../img/ico_deco5.png) no-repeat;
+  display: block;
+  width: 125px;
+  height: 80px;
+  position: absolute;
+  right: 25px;
+  top: 35px;
+}
+.content-box1.document_img > ul > .sub-title3 {
+  margin-bottom: 10px;
+}
+.content-box1.document_img > ul > li:not(.sub-title3) {
+  color: #666666;
+  font-size: 13px;
+  padding-left: 10px;
+  position: relative;
+  margin-top: 12px;
+  line-height: 20px;
+}
+.content-box1.document_img > ul > li:not(.sub-title3)::before {
+  content: "";
+  background-image: url("../img/blt_list.png");
+  display: block;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 0px;
+  top: 9px;
+}
+.freemention-img img {
+  border-radius: 90px;
+  background: #d9e9f0;
+}
+.freemention-img + li {
+  padding-left: 10px;
+}
+.freemention-img + li > p {
+  padding: 15px 0 10px;
+  font-size: 14px;
+}
+.freemention-img + li > a {
+  border-bottom: 2px solid #b2b2b2;
+  line-height: 23px;
+  font-weight: bold;
+  font-size: 14px;
+  position: relative;
+  display: block;
+  width: 75px;
+}
+.freemention-img + li > a::after {
+  content: "";
+  position: absolute;
+  left: 65px;
+  width: 8px;
+  height: 15px;
+  display: block;
+  top: 5px;
+  background-image: url(../img/blt_go.png);
+  background-repeat: no-repeat;
+}
+.new_icon {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+  background-image: url(../img/ico_new.png);
+  display: inline-block;
+  vertical-align: -2px;
+  margin-left: 5px;
+  background-repeat: no-repeat;
+}
