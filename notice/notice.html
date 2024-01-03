@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/mb.css" />
   <link rel="stylesheet" href="../css/content.css">
+  <link rel="stylesheet" href="../css/interval.css">
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script defer src="../js/main.js"></script>
   <script defer src="../js/content.js"></script>
 
-  <title>자주묻는질문</title>
+  <title>공지사항</title>
 </head>
 <script>
   window.onload = function () {
@@ -1632,15 +1633,14 @@
 
   <!-- header2-->
   <section class="header2">
-    <div class="visual_img01">참여민원</div>
+    <div class="visual_img04">알림소식</div>
     <div class="inner">
-      <div class="phase">
+      <div class="phase phase2">
         <a class="home" href="">
           <img src="../img/ico_home.png" alt="" />
         </a>
-        <a href="">참여민원</a>
-        <a href="">민원안내</a>
-        <span>자주묻는질문</span>
+        <a href="javascript void(0)">알림소식</a>
+        <a href="javascript void(0)">공지사항</a>
       </div>
       <div class="print">
         <a href="">
@@ -1654,130 +1654,50 @@
   <section class="container">
     <div class="inner">
       <div class="left-menu">
-        <p>참여민원</p>
+        <p>알림소식</p>
         <div class="accordion">
-          <!--민원안내-->
-          <input type="checkbox" id="answer01" checked="checked" onclick="return false" />
-          <label for="answer01" class="page-now">
-            <a href="javascript:void(0)">민원안내</a>
+          <!--공지사항-->
+          <input type="checkbox" id="leftmenu01" checked="checked" onclick="return false" />
+          <label for="leftmenu01" class="left-menu-button arrow-right">
+            <a href="javascript:void(0)">공지사항</a>
             <em></em>
           </label>
-          <div style="border-bottom: 1px solid #dddddd">
-            <ul>
-              <li>
-                <a href="javascript:void(0)"> 민원사무 안내 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 민원서식 내려받기 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 사건처리절차 안내 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 열람등사절차 안내 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 민원서비스현장 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 민원안내전화 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 적극행정제도 소개 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 적극행정 소식란 </a>
-              </li>
-            </ul>
-          </div>
-          <!--민원안내-->
-          <!--일반민원-->
-          <input type="checkbox" id="answer02" />
-          <label for="answer02" class="left-menu-button">
-            <a href="javascript:void(0)">일반민원</a>
+          <!--공지사항-->
+          <!--고시·공고-->
+          <input type="checkbox" id="leftmenu02" />
+          <label for="leftmenu02" class="left-menu-button arrow-right">
+            <a href="javascript:void(0)">고시·공고</a>
             <em></em>
           </label>
-          <div>
-            <ul>
-              <li>
-                <a href="javascript:void(0)"> 이용안내 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 민원신청/확인 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 110정부민원안내콜센터 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 공개민원 열람하기 </a>
-              </li>
-            </ul>
-          </div>
-          <!--민원안내-->
-          <!--제증명민원-->
-          <input type="checkbox" id="answer03" />
-          <label for="answer03" class="icon left-menu-button arrow-right">
-            <a href="javascript:void(0)">제증명민원</a>
+          <!--고시·공고-->
+          <!--고시·공고-->
+          <input type="checkbox" id="leftmenu03" />
+          <label for="leftmenu03" class="left-menu-button arrow-right">
+            <a href="javascript:void(0)">검찰발표자료</a>
             <em></em>
           </label>
-          <!--제증명민원-->
-          <!--벌과금/사건검색-->
-          <input type="checkbox" id="answer04" />
-          <label for="answer04" class="left-menu-button">
+          <!--고시·공고-->
+          <!--검찰소식-->
+          <input type="checkbox" id="leftmenu04" />
+          <label for="leftmenu04" class="left-menu-button">
             <a href="javascript:void(0)">벌과금/사건검색</a>
             <em></em>
           </label>
           <div>
             <ul>
-              <li class="icon">
-                <a href="javascript:void(0)"> 사건진행상황조회 </a>
+              <li>
+                <a href="javascript:void(0)"> 카드뉴스 </a>
               </li>
               <li class="icon">
-                <a href="javascript:void(0)"> 벌과금납부조회 </a>
+                <a href="javascript:void(0)"> 생생영상 </a>
               </li>
-              <li class="icon">
-                <a href="javascript:void(0)"> 재판서 및 통지서 조회 </a>
-              </li>
-              <li class="icon">
-                <a href="javascript:void(0)"> 가납금환급조회 </a>
+              <li>
+                <a href="javascript:void(0)"> 뉴스레터 </a>
               </li>
             </ul>
           </div>
-          <!--벌과금/사건검색-->
-          <!--자주묻는질문-->
-          <input type="checkbox" id="answer05" />
-          <label for="answer05" class="left-menu-button arrow-right">
-            <a href="javascript:void(0)">자주묻는질문</a>
-            <em></em>
-          </label>
-          <!--자주묻는질문-->
-          <!--자유발언대-->
-          <input type="checkbox" id="answer06" />
-          <label for="answer06" class="left-menu-button arrow-right">
-            <a href="https://www.youtube.com/watch?v=jdTsJzXmgU0&list=PLuHgQVnccGMCeAy-2-llhw3nWoQKUvQck">자유발언대</a>
-            <em></em>
-          </label>
-          <!--자유발언대-->
-          <!--감동직원추천-->
-          <input type="checkbox" id="answer07" />
-          <label for="answer07" class="left-menu-button">
-            <a href="javascript:void(0)">감동직원추천</a>
-            <em></em>
-          </label>
-          <div>
-            <ul>
-              <li class="drop-on">
-                <a href="javascript:void(0)"> 감동직원추천 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 추천서 작성하기 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 내의견 보기 </a>
-              </li>
-            </ul>
-          </div>
-          <!--감동직원추천-->
+          <!--검찰소식-->
+
         </div>
         <div class="left-menu_box">
           <div class="call">
@@ -1801,13 +1721,99 @@
       </div>
 
       <div class="content">
-        <p>자주묻는질문</p>
-
-
-
-
-        <div class="form-2_table">
+        <p>공지사항</p>
+        <div class="form-2">
           <div class="form-2_search">
+            <select class="w130" naem="" id="">
+              <option value="" selected="selected">주관부서</option>
+
+              <option value="1281259">감찰1과</option>
+
+              <option value="1281260">감찰2과</option>
+
+              <option value="1281673">감찰3과</option>
+
+              <option value="1281858">공공수사기획관</option>
+
+              <option value="1281879">공안수사지원과</option>
+
+              <option value="1281674">공판1과</option>
+
+              <option value="1281677">공판2과</option>
+
+              <option value="1281672">국제협력담당관</option>
+
+              <option value="1281887">노동수사지원과</option>
+
+              <option value="1281261">대변인</option>
+
+              <option value="1281461">디엔에이화학분석과</option>
+
+              <option value="1281398">디지털수사과</option>
+
+              <option value="1281856">마약·조직범죄기획관</option>
+
+              <option value="1281854">마약·조직범죄부</option>
+
+              <option value="1281880">마약과</option>
+
+              <option value="1281881">반부패1과</option>
+
+              <option value="1281883">반부패2과</option>
+
+              <option value="1281885">반부패3과</option>
+
+              <option value="1281875">반부패기획관</option>
+
+              <option value="1281886">범죄수익환수과</option>
+
+              <option value="1281862">범죄정보1담당관</option>
+
+              <option value="1281859">범죄정보2담당관</option>
+
+              <option value="1281855">범죄정보기획관</option>
+
+              <option value="1281460">법과학분석과</option>
+
+              <option value="1281485">복지후생과</option>
+
+              <option value="1281389">비상계획담당관</option>
+
+              <option value="1281888">사이버·기술범죄수사과</option>
+
+              <option value="1281399">사이버수사과</option>
+
+              <option value="1281884">선거수사지원과</option>
+
+              <option value="1281684">양성평등정책담당관</option>
+
+              <option value="1281252">운영지원과</option>
+
+              <option value="1281685">인권감독담당관</option>
+
+              <option value="1281683">인권기획담당관</option>
+
+              <option value="1281676">인권정책관</option>
+
+              <option value="1280720">정보통신과</option>
+
+              <option value="1281276">정책기획과</option>
+
+              <option value="1281882">조직범죄과</option>
+
+              <option value="1280046">집행과</option>
+
+              <option value="1281257">형사1과</option>
+
+              <option value="1281258">형사2과</option>
+
+              <option value="1281680">형사3과</option>
+
+              <option value="1281682">형사4과</option>
+
+              <option value="1281678">형사정책담당관</option>
+
+            </select>
             <select name="" id="">
               <option value="제목">제목</option>
               <option value="내용">내용</option>
@@ -1830,15 +1836,21 @@
                 <th>번호</th>
                 <th>제목</th>
                 <th>첨부파일</th>
-                <th>유형</th>
-                <th>담당부서</th>
-                <th>조회수</th>
+                <th>주관부서</th>
+                <th>작성일</th>
+                <th>조회</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>50</td>
-                <td>[대검찰청] 서약서(검찰보존사무규칙 별지 제6호의3 서식)</td>
+              <tr class="blue">
+                <td>
+                  <img src="../img/icon_notice.png" alt="">
+                </td>
+                <td>
+                  <a class="freemention_new" href="javascript void(0)">현대건설 사기분양, 대법원 확정 판결 새글현대건설 사기분양, 대법원 확정 판결
+                    새글현대건설 사기분양, 대법원 확정 판결 새글현대건설 사기분양, 대법원 확정 판결 새글</a>
+                  <span class="new_icon"></span>
+                </td>
                 <td>
                   <img src="../img/ico_file.png" alt="">
                 </td>
@@ -1955,12 +1967,6 @@
 
 
         </div>
-
-
-
-
-
-
 
 
 

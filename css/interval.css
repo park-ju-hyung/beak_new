@@ -1,14 +1,35 @@
 /* margin-top */
+.mgt-13 {
+  margin-top: 13px;
+}
 .mgt-20 {
   margin-top: 20px;
 }
-
 /* margin-bottom */
 .mgb-40 {
   margin-bottom: 40px;
 }
 
+/* padding-bottom*/
+.pdb-20 {
+  padding-bottom: 20px;
+}
 /* padding-left*/
 .pdl-50 {
   padding-left: 50px;
+}
+/* padding-top*/
+.pdt-10 {
+  padding-top: 10px;
+}
+.pdt-15 {
+  padding-top: 15px;
+}
+
+/* width */
+.w130 {
+  width: 130px !important;
+}
+.w150 {
+  width: 150px !important;
 }

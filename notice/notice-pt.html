@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/mb.css" />
   <link rel="stylesheet" href="../css/content.css">
+  <link rel="stylesheet" href="../css/interval.css">
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script defer src="../js/main.js"></script>
   <script defer src="../js/content.js"></script>
 
-  <title>자주묻는질문</title>
+  <title>검찰발표자료</title>
 </head>
 <script>
   window.onload = function () {
@@ -1632,15 +1633,14 @@
 
   <!-- header2-->
   <section class="header2">
-    <div class="visual_img01">참여민원</div>
+    <div class="visual_img04">알림소식</div>
     <div class="inner">
-      <div class="phase">
+      <div class="phase phase2">
         <a class="home" href="">
           <img src="../img/ico_home.png" alt="" />
         </a>
-        <a href="">참여민원</a>
-        <a href="">민원안내</a>
-        <span>자주묻는질문</span>
+        <a href="javascript void(0)">알림소식</a>
+        <a href="javascript void(0)">검찰발표자료</a>
       </div>
       <div class="print">
         <a href="">
@@ -1654,130 +1654,50 @@
   <section class="container">
     <div class="inner">
       <div class="left-menu">
-        <p>참여민원</p>
+        <p>알림소식</p>
         <div class="accordion">
-          <!--민원안내-->
-          <input type="checkbox" id="answer01" checked="checked" onclick="return false" />
-          <label for="answer01" class="page-now">
-            <a href="javascript:void(0)">민원안내</a>
+          <!--공지사항-->
+          <input type="checkbox" id="leftmenu01" />
+          <label for="leftmenu01" class="left-menu-button arrow-right">
+            <a href="javascript:void(0)">공지사항</a>
             <em></em>
           </label>
-          <div style="border-bottom: 1px solid #dddddd">
-            <ul>
-              <li>
-                <a href="javascript:void(0)"> 민원사무 안내 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 민원서식 내려받기 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 사건처리절차 안내 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 열람등사절차 안내 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 민원서비스현장 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 민원안내전화 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 적극행정제도 소개 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 적극행정 소식란 </a>
-              </li>
-            </ul>
-          </div>
-          <!--민원안내-->
-          <!--일반민원-->
-          <input type="checkbox" id="answer02" />
-          <label for="answer02" class="left-menu-button">
-            <a href="javascript:void(0)">일반민원</a>
+          <!--공지사항-->
+          <!--고시·공고-->
+          <input type="checkbox" id="leftmenu02" checked="checked" onclick="return false" />
+          <label for="leftmenu02" class="left-menu-button arrow-right">
+            <a href="javascript:void(0)">고시·공고</a>
             <em></em>
           </label>
-          <div>
-            <ul>
-              <li>
-                <a href="javascript:void(0)"> 이용안내 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 민원신청/확인 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 110정부민원안내콜센터 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 공개민원 열람하기 </a>
-              </li>
-            </ul>
-          </div>
-          <!--민원안내-->
-          <!--제증명민원-->
-          <input type="checkbox" id="answer03" />
-          <label for="answer03" class="icon left-menu-button arrow-right">
-            <a href="javascript:void(0)">제증명민원</a>
+          <!--고시·공고-->
+          <!--고시·공고-->
+          <input type="checkbox" id="leftmenu03" />
+          <label for="leftmenu03" class="left-menu-button arrow-right">
+            <a href="javascript:void(0)">검찰발표자료</a>
             <em></em>
           </label>
-          <!--제증명민원-->
-          <!--벌과금/사건검색-->
-          <input type="checkbox" id="answer04" />
-          <label for="answer04" class="left-menu-button">
+          <!--고시·공고-->
+          <!--검찰소식-->
+          <input type="checkbox" id="leftmenu04" />
+          <label for="leftmenu04" class="left-menu-button">
             <a href="javascript:void(0)">벌과금/사건검색</a>
             <em></em>
           </label>
           <div>
             <ul>
-              <li class="icon">
-                <a href="javascript:void(0)"> 사건진행상황조회 </a>
+              <li>
+                <a href="javascript:void(0)"> 카드뉴스 </a>
               </li>
               <li class="icon">
-                <a href="javascript:void(0)"> 벌과금납부조회 </a>
+                <a href="javascript:void(0)"> 생생영상 </a>
               </li>
-              <li class="icon">
-                <a href="javascript:void(0)"> 재판서 및 통지서 조회 </a>
-              </li>
-              <li class="icon">
-                <a href="javascript:void(0)"> 가납금환급조회 </a>
+              <li>
+                <a href="javascript:void(0)"> 뉴스레터 </a>
               </li>
             </ul>
           </div>
-          <!--벌과금/사건검색-->
-          <!--자주묻는질문-->
-          <input type="checkbox" id="answer05" />
-          <label for="answer05" class="left-menu-button arrow-right">
-            <a href="javascript:void(0)">자주묻는질문</a>
-            <em></em>
-          </label>
-          <!--자주묻는질문-->
-          <!--자유발언대-->
-          <input type="checkbox" id="answer06" />
-          <label for="answer06" class="left-menu-button arrow-right">
-            <a href="https://www.youtube.com/watch?v=jdTsJzXmgU0&list=PLuHgQVnccGMCeAy-2-llhw3nWoQKUvQck">자유발언대</a>
-            <em></em>
-          </label>
-          <!--자유발언대-->
-          <!--감동직원추천-->
-          <input type="checkbox" id="answer07" />
-          <label for="answer07" class="left-menu-button">
-            <a href="javascript:void(0)">감동직원추천</a>
-            <em></em>
-          </label>
-          <div>
-            <ul>
-              <li class="drop-on">
-                <a href="javascript:void(0)"> 감동직원추천 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 추천서 작성하기 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 내의견 보기 </a>
-              </li>
-            </ul>
-          </div>
-          <!--감동직원추천-->
+          <!--검찰소식-->
+
         </div>
         <div class="left-menu_box">
           <div class="call">
@@ -1801,13 +1721,214 @@
       </div>
 
       <div class="content">
-        <p>자주묻는질문</p>
-
-
-
-
-        <div class="form-2_table">
+        <p>검찰발표자료</p>
+        <div class="form-2">
           <div class="form-2_search">
+            <select id="" name="" title="주관청을 선택하세요." class="w150">
+              <option value="all">전국청</option>
+
+
+              <option value="spo" selected="selected">대검찰청</option>
+
+
+              <option value="highseoul">서울고검</option>
+
+
+              <option value="seoul">서울중앙지검</option>
+
+
+              <option value="eastseoul">서울동부지검</option>
+
+
+              <option value="southseoul">서울남부지검</option>
+
+
+              <option value="northseoul">서울북부지검</option>
+
+
+              <option value="westseoul">서울서부지검</option>
+
+
+              <option value="uijeongbu">의정부지검</option>
+
+
+              <option value="goyang">고양지청</option>
+
+
+              <option value="namyangju">남양주지청</option>
+
+
+              <option value="incheon">인천지검</option>
+
+
+              <option value="bucheon">부천지청</option>
+
+
+              <option value="chuncheon">춘천지검</option>
+
+
+              <option value="gangneung">강릉지청</option>
+
+
+              <option value="wonju">원주지청</option>
+
+
+              <option value="sokcho">속초지청</option>
+
+
+              <option value="yeongwol">영월지청</option>
+
+
+              <option value="highsuwon">수원고검</option>
+
+
+              <option value="suwon">수원지검</option>
+
+
+              <option value="seongnam">성남지청</option>
+
+
+              <option value="yeoju">여주지청</option>
+
+
+              <option value="pyeongtaek">평택지청</option>
+
+
+              <option value="ansan">안산지청</option>
+
+
+              <option value="anyang">안양지청</option>
+
+
+              <option value="highdaejeon">대전고검</option>
+
+
+              <option value="daejeon">대전지검</option>
+
+
+              <option value="hongseong">홍성지청</option>
+
+
+              <option value="gongju">공주지청</option>
+
+
+              <option value="nonsan">논산지청</option>
+
+
+              <option value="seosan">서산지청</option>
+
+
+              <option value="cheonan">천안지청</option>
+
+
+              <option value="cheongju">청주지검</option>
+
+
+              <option value="chungju">충주지청</option>
+
+
+              <option value="jecheon">제천지청</option>
+
+
+              <option value="yeongdong">영동지청</option>
+
+
+              <option value="highdaegu">대구고검</option>
+
+
+              <option value="daegu">대구지검</option>
+
+
+              <option value="westdaegu">대구서부지청</option>
+
+
+              <option value="andong">안동지청</option>
+
+
+              <option value="gyeongju">경주지청</option>
+
+
+              <option value="pohang">포항지청</option>
+
+
+              <option value="gimcheon">김천지청</option>
+
+
+              <option value="sangju">상주지청</option>
+
+
+              <option value="uiseong">의성지청</option>
+
+
+              <option value="yeongdeok">영덕지청</option>
+
+
+              <option value="highbusan">부산고검</option>
+
+
+              <option value="busan">부산지검</option>
+
+
+              <option value="eastbusan">부산동부지청</option>
+
+
+              <option value="westbusan">부산서부지청</option>
+
+
+              <option value="ulsan">울산지검</option>
+
+
+              <option value="changwon">창원지검</option>
+
+
+              <option value="masan">마산지청</option>
+
+
+              <option value="jinju">진주지청</option>
+
+
+              <option value="tongyeong">통영지청</option>
+
+
+              <option value="miryang">밀양지청</option>
+
+
+              <option value="geochang">거창지청</option>
+
+
+              <option value="highgwangju">광주고검</option>
+
+
+              <option value="gwangju">광주지검</option>
+
+
+              <option value="mokpo">목포지청</option>
+
+
+              <option value="jangheung">장흥지청</option>
+
+
+              <option value="suncheon">순천지청</option>
+
+
+              <option value="haenam">해남지청</option>
+
+
+              <option value="jeonju">전주지검</option>
+
+
+              <option value="gunsan">군산지청</option>
+
+
+              <option value="jeongeup">정읍지청</option>
+
+
+              <option value="namwon">남원지청</option>
+
+
+              <option value="jeju">제주지검</option>
+
+            </select>
             <select name="" id="">
               <option value="제목">제목</option>
               <option value="내용">내용</option>
@@ -1820,19 +1941,20 @@
           <table class="form-2_table">
             <colgroup>
               <col width="10%">
-              <col>
-              <col width="10%">
-              <col width="10%">
-              <col width="10%">
+              <col width="40%">
+              <col width="7%">
+              <col width="7%">
+              <col width="7%">
+              <col width="7%">
             </colgroup>
             <thead>
               <tr>
                 <th>번호</th>
                 <th>제목</th>
                 <th>첨부파일</th>
-                <th>유형</th>
-                <th>담당부서</th>
-                <th>조회수</th>
+                <th>청명</th>
+                <th>작성일</th>
+                <th>조회</th>
               </tr>
             </thead>
             <tbody>
@@ -1842,7 +1964,7 @@
                 <td>
                   <img src="../img/ico_file.png" alt="">
                 </td>
-                <td>민원기타</td>
+                <td>울산지검</td>
                 <td>2283</td>
                 <td>12283</td>
               </tr>
@@ -1955,12 +2077,6 @@
 
 
         </div>
-
-
-
-
-
-
 
 
 
