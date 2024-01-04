@@ -6,8 +6,15 @@
   margin-top: 20px;
 }
 /* margin-bottom */
+.mgb-33 {
+  margin-bottom: 33px !important;
+}
 .mgb-40 {
   margin-bottom: 40px;
+}
+/* margin-right */
+.mgr-10 {
+  margin-right: 8px;
 }
 
 /* padding-bottom*/
@@ -32,4 +39,9 @@
 }
 .w150 {
   width: 150px !important;
+}
+
+/* text-align */
+.text-center {
+  text-align: center !important;
 }

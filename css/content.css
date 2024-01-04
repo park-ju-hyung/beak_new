@@ -95,7 +95,7 @@
 .form-2_table > tbody > tr > td:first-child > img {
   vertical-align: -15px;
 }
-.form-2_table > tbody > tr > td > a {
+.form-2_table > tbody > tr > td:nth-child(2) > a {
   position: relative;
   display: inline-block;
   white-space: nowrap;
@@ -103,6 +103,7 @@
   text-overflow: ellipsis;
   width: 360px;
 }
+
 .form-2_table > tbody > tr > td > a:hover {
   text-decoration: underline;
   color: #074a73;
@@ -242,6 +243,14 @@
   font-size: 20px;
   font-weight: bold;
   color: #074a73;
+}
+
+.sub-title4 {
+  font-size: 18px !important;
+  font-weight: bold;
+  line-height: 23px;
+  color: #333333;
+  margin-bottom: 15px;
 }
 
 .span-bold {
@@ -1530,4 +1539,215 @@ p.accident_text_bottom::before {
 }
 .card > li > a > p.date > span:nth-child(2) {
   float: right;
+}
+
+/* 정보자료 */
+
+.visual_img03 {
+  background: url("../img/top_visual03.png") no-repeat center top;
+  overflow: hidden;
+  height: 130px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 134px;
+  color: #ffffff;
+  margin-top: 89px;
+}
+
+/* 나라지표상황판 */
+.contry-box {
+  margin-top: 15px;
+}
+.contry-box li {
+  border: 1px solid #ddd;
+  width: 365px;
+  height: 100px;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.contry-box li:first-child {
+  margin-right: 8px;
+}
+.contry-box li a {
+  display: block;
+  height: 35px;
+  padding: 0 20px;
+  border: 1px solid #074a73;
+  border-radius: 2px;
+  background: #ffffff;
+  color: #074a73;
+  font-size: 14px;
+  line-height: 35px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.contry-box li a::after {
+  content: "";
+  background-image: url("../img/blt_goto.png");
+  width: 8px;
+  height: 12px;
+  display: inline-block;
+  margin-left: 5px;
+  position: absolute;
+  right: 9px;
+  top: 11px;
+}
+/* 정보공개 */
+.visual_img05 {
+  background: url("../img/top_visual05.png") no-repeat center top;
+  overflow: hidden;
+  height: 130px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 134px;
+  color: #ffffff;
+  margin-top: 89px;
+}
+
+/* 정보공개제도란 */
+
+.content-box1.informationopen_img::after {
+  content: "";
+  background: url(../img/ico_deco13.png) no-repeat;
+  display: block;
+  width: 140px;
+  height: 82px;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+}
+.information-open > li:first-child {
+  border-right: 1px solid #ddd;
+}
+.information-open > li:nth-child(1) {
+  padding-left: 0px;
+  padding-right: 40px;
+}
+.information-open > li:nth-child(2) {
+  padding-left: 40px;
+  padding-right: 0px;
+}
+.information-open > li > span {
+  display: inline-block;
+  background-image: url("../img/blt_chk.png");
+  width: 16px;
+  height: 16px;
+}
+.information-open > li > p:nth-child(2) {
+  display: inline-block;
+}
+.information-open > li > p:nth-child(3) {
+  font-size: 13px;
+  line-height: 26px;
+}
+.information-open > li > p:nth-child(3) > span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.form-2_table.information-table > thead > tr > th {
+  background: #f5f5f5;
+  font-weight: bold;
+  padding: 7px 0 7px 0;
+  font-size: 15px;
+  border-right: 1px solid #ddd;
+}
+.form-2_table.information-table > thead > tr > th:last-child {
+  border-right: none;
+}
+
+.form-2_table.information-table > tbody > tr > td {
+  border-right: 1px solid #ddd;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+.form-2_table.information-table > tbody > tr > td:last-child {
+  border-right: none;
+}
+
+/** 업무처리절차 **/
+.information-procedure {
+  margin-top: 40px;
+  padding: 29px 15px 35px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/** 공개청구권자 **/
+.request-box {
+  border-top: 2px solid #333333;
+}
+.request-box ul {
+  padding: 35px 0 30px;
+  border-bottom: 1px solid #ddd;
+}
+.request-box ul li:first-child > img {
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  background: #d9e9f0;
+  margin: 0px 40px;
+}
+.request-box ul li:nth-child(2) > p:first-child {
+  font-size: 17px;
+  font-weight: bold;
+}
+.request-box ul li:nth-child(2) > p:nth-child(2),
+.request-box ul li:nth-child(2) > p:nth-child(3),
+.request-box ul li:nth-child(2) > p:nth-child(4) {
+  color: #666666;
+  font-size: 13px;
+  margin-top: 15px;
+}
+.request-box ul li:nth-child(2) > p:nth-child(3),
+.request-box ul li:nth-child(2) > p:nth-child(4) {
+  margin-top: 3px;
+}
+
+/** 관련서식 **/
+.hangul {
+  text-decoration: underline;
+  position: relative;
+}
+.hangul::after {
+  content: "";
+  background: url(../img/ico_han.png) 1px -2px;
+  position: absolute;
+  display: block;
+  width: 21px;
+  height: 36px;
+  top: 0px;
+  left: 1px;
+  background-size: 21px 21px !important;
+  background-repeat: no-repeat;
+}
+.pdf {
+  text-decoration: underline;
+  position: relative;
+}
+.pdf::after {
+  content: "";
+  background: url(../img/ico_pdf.png) 1px -2px;
+  position: absolute;
+  display: block;
+  width: 21px;
+  height: 36px;
+  top: 0px;
+  left: 1px;
+  background-size: 21px 21px !important;
+  background-repeat: no-repeat;
+}
+.form-2_table.RelatedForms > tbody > tr > td:nth-child(3) > a,
+.form-2_table.RelatedForms > tbody > tr > td:nth-child(4) > a {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 170px;
 }
