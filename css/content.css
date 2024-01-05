@@ -102,6 +102,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   width: 360px;
+  cursor: pointer;
 }
 
 .form-2_table > tbody > tr > td > a:hover {
@@ -204,7 +205,7 @@
   background: #f5f5f5;
   border-left: 1px solid #dddddd;
 }
-.form-2_table2 > thead > tr > th:first-child {
+.form-2_table2 > thead > tr:first-child > th:first-child {
   border-left: none;
 }
 .form-2_table2 > tbody > tr > td {
@@ -962,20 +963,21 @@ p.accident_text_bottom::before {
   color: #074a73;
   margin-bottom: 11px;
 }
+/**
 .content-box1 > p:nth-child(2) {
   padding-top: 14px;
   position: relative;
 }
+
 .content-box1 > p:nth-child(2)::before {
   content: "";
   display: block;
   border-bottom: 2px solid #2c4b71;
   width: 30px;
-  /* margin-bottom: 20px; */
-  /* height: 2px; */
   position: absolute;
   top: 0px;
 }
+**/
 .content-box2 ul li {
   font-size: 12px;
   position: relative;
@@ -1750,4 +1752,211 @@ p.accident_text_bottom::before {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 170px;
+}
+
+/* 사전정보공표 */
+.advanceinformation-tab {
+  margin-left: 0;
+  width: 20%;
+  height: 50px;
+  background: #eeeeee;
+  border: 0px none;
+  border-bottom: 1px #dedede solid;
+  border-right: 1px #dedede solid;
+  box-sizing: border-box;
+  vertical-align: top;
+  float: left;
+}
+.advanceinformation-tab > a {
+  width: 999px;
+  height: 50px;
+  font-size: 12px;
+  text-align: center;
+  display: table-cell;
+  line-height: 22px;
+  color: #666666;
+  word-break: keep-all;
+  vertical-align: middle;
+  border-bottom: 1px solid #dddddd;
+}
+.advanceinformation-tab a.active {
+  background: #ffffff;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid #dddddd;
+}
+.advanceinformation-title {
+  font-size: 18px !important;
+  font-weight: bold;
+  line-height: 23px;
+  color: #333333;
+  margin-bottom: 15px;
+  padding-top: 50px;
+}
+.advanceinformation-title + table > tbody > tr > td {
+  padding: 10px;
+}
+.advanceinformation-title + table > tbody > tr > td:first-child {
+  font-weight: bold;
+}
+.advanceinformation-title + table > tbody > tr > td:last-child > a {
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: 1px solid black;
+}
+.advanceinformation-title + table > tbody > tr > td:last-child > a::after {
+  content: "";
+  background: url("../img/blt_go.png");
+  width: 8px;
+  height: 12px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* 수수료 안내 */
+.form-2_table2.fee > tbody > tr > td {
+  padding: 17px 20px 16px 20px;
+}
+.form-2_table2.fee > tbody > tr > td:not(:first-child) {
+  border-left: 1px solid #ddd;
+}
+.form-2_table2.fee > tbody > tr > td:last-child {
+  text-align: left;
+}
+.form-2_table2.fee > tbody > tr > td > .ulstyle-1:not(:first-child) {
+  margin-top: 12px;
+}
+.form-2_table2.fee > tbody > tr > td > p.extrafee {
+  position: relative;
+  padding-left: 17px;
+  margin-top: 1px;
+}
+.form-2_table2.fee > tbody > tr > td > p.extrafee::before {
+  content: "※";
+  display: inline-block;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
+}
+
+/** 불복구제절차 **/
+.content-box3.relief {
+  display: block;
+}
+.content-box3.relief + p {
+  margin-top: 20px;
+}
+.content-box3.relief > p:first-child {
+  font-weight: bold;
+  color: #222;
+  padding-bottom: 12px;
+  line-height: 24px;
+  font-size: 13px;
+  border-bottom: 1px solid #ddd;
+}
+.content-box3.relief > p:nth-child(2) {
+  font-size: 12px;
+  margin: 10px 0px 10px 0px;
+}
+
+.content-box3.relief > p:nth-child(3) {
+  font-size: 12px;
+}
+
+/** 불복구제절차 **/
+
+.content-box1.disclose::after {
+  content: none;
+}
+.form-2_table2.disclose > tbody > tr > td:first-child {
+  background: #fbfbfb;
+  border-right: 1px solid #dddddd;
+}
+.form-2_table2.disclose > tbody > tr > td:nth-child(2) {
+  background: #ffff;
+  padding: 17px 20px 16px 20px;
+}
+.form-2_table2.disclose > tbody > tr > td:nth-child(2) > ul > li {
+  line-height: 20px;
+}
+.form-2_table2.disclose + p.sub-title {
+  font-size: 15px;
+  margin: 26px 0px 0px 0px;
+}
+.content-box1.disclose > p:nth-child(2) {
+  font-size: 15px;
+  line-height: 24px;
+  padding: 10px 0px 0px 10px;
+  color: #666666;
+  position: relative;
+}
+
+.content-box1.disclose > p:nth-child(2)::before {
+  content: "*";
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #013e68;
+}
+
+/**
+.content > .content-box1.disclose > p.sub-title {
+  margin: 26px 0px 26px 0px;
+  font-size: 15px;
+}
+**/
+/* 첫번째 항목이 blue , 아래들은 점 처리 검은색 리스트  */
+.ulstyle-1 > li:first-child {
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: #074a73;
+}
+.ulstyle-1 > li:not(:first-child) {
+  color: #666666;
+  padding-left: 10px;
+  line-height: 20px;
+  position: relative;
+}
+.ulstyle-1 > li:not(:first-child)::after {
+  content: "";
+  background: url("../img/blt_list.png");
+  position: absolute;
+  display: block;
+  width: 3px;
+  height: 3px;
+  top: 10px;
+  left: 0px;
+}
+
+/* 첫번째 항목이 검은색 , 아래들은 점 처리 검은색 리스트  */
+.ulstyle-2 > li:first-child {
+  margin: 30px 0px 15px 0px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #333333;
+}
+.ulstyle-2 > li:not(:first-child) {
+  color: #666666;
+  padding-left: 10px;
+  line-height: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+.ulstyle-2 > li:not(:first-child)::after {
+  content: "";
+  background: url("../img/blt_list.png");
+  position: absolute;
+  display: block;
+  width: 3px;
+  height: 3px;
+  top: 10px;
+  left: 0px;
 }
