@@ -216,7 +216,9 @@
   height: 0px;
   text-align: left;
 }
-
+.dib {
+  display: inline-block;
+}
 .dib > li {
   display: inline-block;
   vertical-align: top;
@@ -1018,6 +1020,9 @@ p.accident_text_bottom::before {
 }
 .content_ullist > li > p {
   font-size: 13px;
+}
+.content_ullist > li > p.dib {
+  vertical-align: top;
 }
 .content_ullist > li > p > span {
   display: inline-block;
@@ -2145,30 +2150,6 @@ p.accident_text_bottom::before {
 }
 
 /* 견학안내 및 신청 */
-
-/* 첫번째 항목이 blue , 아래들은 점 처리 검은색 리스트  */
-.ulstyle-1 > li:first-child {
-  padding-bottom: 5px;
-  font-weight: bold;
-  color: #074a73;
-}
-.ulstyle-1 > li:not(:first-child) {
-  color: #666666;
-  padding-left: 10px;
-  line-height: 20px;
-  position: relative;
-}
-.ulstyle-1 > li:not(:first-child)::after {
-  content: "";
-  background: url("../img/blt_list.png");
-  position: absolute;
-  display: block;
-  width: 3px;
-  height: 3px;
-  top: 10px;
-  left: 0px;
-}
-/* 견학안내 및 신청 */
 .tour-box {
   border-top: 2px solid #333333;
 }
@@ -2252,20 +2233,147 @@ p.accident_text_bottom::before {
   top: 7px;
   left: 0px;
 }
-/**
-.tour-box ul li:nth-child(2) > p:nth-child(2),
-.tour-box ul li:nth-child(2) > p:nth-child(3),
-.tour-box ul li:nth-child(2) > p:nth-child(4) {
-  color: #666666;
+
+.content-box1.prosecution_img::after {
+  content: "";
+  background: url("../img/bg_logo_call.png") no-repeat;
+  display: block;
+  width: 128px;
+  height: 127px;
+  position: absolute;
+  right: 35px;
+  top: 40px;
+}
+.dib.prosecution > li > ul > li {
+  margin-bottom: 20px;
+  color: #666;
   font-size: 13px;
-  margin-top: 15px;
 }
-.tour-box ul li:nth-child(2) > p:nth-child(3),
-.tour-box ul li:nth-child(2) > p:nth-child(4) {
-  margin-top: 3px;
+.dib.prosecution > li:first-child {
+  width: 300px;
+  margin-right: 40px;
 }
-**/
+.dib.prosecution > li:nth-child(2) {
+  width: 480px;
+}
+.dib.prosecution + .ulstyle-2 {
+  font-size: 13px;
+}
+
+/* 검찰구성원 */
+.content-box1.member_img {
+  background: url("../img/bg_cmdbox_member.png") no-repeat;
+  height: 140px;
+  margin-bottom: 0px;
+}
+.content-box1.member_img::after {
+  content: none;
+}
+
+/* 찾아오시는 길 */
+.goggle-detail {
+  margin-top: 20px;
+  text-align: right;
+}
+.goggle-detail a {
+  display: inline-block;
+  height: 35px;
+  padding: 0 20px;
+  border: 1px solid #074a73;
+  border-radius: 2px;
+  background: #ffffff;
+  color: #074a73;
+  font-size: 14px;
+  line-height: 35px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  min-width: 90px;
+  width: 90px;
+}
+.goggle-detail a::after {
+  content: "";
+  background-image: url(../img/blt_goto.png);
+  width: 8px;
+  height: 12px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.dib.direction > li > ul > li {
+  vertical-align: top;
+}
+.dib.direction > li > ul > li:nth-child(2) {
+  margin-top: 0px;
+  padding-left: 50px;
+}
+.dib.direction > li > ul > li > p:nth-child(2) {
+  margin-top: 10px;
+}
+.dib.direction > li > ul > li > p > span::before {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #2c4b71;
+  width: 20px;
+  position: absolute;
+  top: 33px;
+}
+.direction-method > li:first-child {
+  color: #2c4b71;
+  padding-left: 15px;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+}
+
+.direction-method > li:first-child::before {
+  content: "";
+  background-image: url(../img/blt_h5_blue.png);
+  display: inline-block;
+  width: 7px;
+  height: 9px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 3px;
+  top: 7px;
+}
+.direction-method > li:nth-child(2) {
+  margin-top: 10px;
+}
+.direction-method > li:nth-child(2),
+.direction-method > li:nth-child(3),
+.direction-method > li:nth-child(4) {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.7px;
+  color: #333333;
+}
+
+/* 첫번째 항목이 blue , 아래들은 점 처리 검은색 리스트  */
+.ulstyle-1 > li:first-child {
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: #074a73;
+}
+.ulstyle-1 > li:not(:first-child) {
+  color: #666666;
+  padding-left: 10px;
+  line-height: 20px;
+  position: relative;
+}
+.ulstyle-1 > li:not(:first-child)::after {
+  content: "";
+  background: url("../img/blt_list.png");
+  position: absolute;
+  display: block;
+  width: 3px;
+  height: 3px;
+  top: 10px;
+  left: 0px;
+}
+
 /* 첫번째 항목이 검은색 , 아래들은 점 처리 검은색 리스트  */
+
 .ulstyle-2 > li:first-child {
   margin: 30px 0px 15px 0px;
   font-size: 18px;

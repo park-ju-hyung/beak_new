@@ -22,12 +22,18 @@
 .mgr-10 {
   margin-right: 8px;
 }
-
+/*padding*/
+.padding0 {
+  padding: 0px !important;
+}
 /* padding-bottom*/
 .pdb-20 {
   padding-bottom: 20px;
 }
 /* padding-left*/
+.pdl-40 {
+  padding-left: 40px;
+}
 .pdl-50 {
   padding-left: 50px;
 }
@@ -53,4 +59,7 @@
 }
 .text-left {
   text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
 }

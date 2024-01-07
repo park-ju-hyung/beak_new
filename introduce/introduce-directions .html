@@ -8,15 +8,17 @@
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/mb.css" />
   <link rel="stylesheet" href="../css/content.css">
+  <link rel="stylesheet" href="../css/interval.css">
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script defer src="../js/main.js"></script>
+  <script defer src="../js/content.js"></script>
 
-  <title>민원서비스헌장</title>
+  <title>찾아오시는 길</title>
 </head>
 <script>
   window.onload = function () {
 
-    function onClick() {01
+    function onClick() {
       document.querySelector("body").style.overflow = 'visible';
       document.querySelector("body").style.overflow = 'visible';
     }
@@ -1631,15 +1633,14 @@
 
   <!-- header2-->
   <section class="header2">
-    <div class="visual_img01">참여민원</div>
+    <div class="visual_img06">검찰소개</div>
     <div class="inner">
-      <div class="phase">
+      <div class="phase phase2">
         <a class="home" href="">
           <img src="../img/ico_home.png" alt="" />
         </a>
-        <a href="">참여민원</a>
-        <a href="">민원안내</a>
-        <span>민원서비스헌장</span>
+        <a href="javascript void(0)">검찰소개</a>
+        <a href="javascript void(0)">찾아오시는길</a>
       </div>
       <div class="print">
         <a href="">
@@ -1653,130 +1654,178 @@
   <section class="container">
     <div class="inner">
       <div class="left-menu">
-        <p>참여민원</p>
+        <p>검찰소개</p>
         <div class="accordion">
-          <!--민원안내-->
-          <input type="checkbox" id="answer01" checked="checked" onclick="return false" />
-          <label for="answer01" class="page-now">
-            <a href="javascript:void(0)">민원안내</a>
+          <!--검찰구성-->
+          <input type="checkbox" id="leftmenu01" />
+          <label for="leftmenu01" class="left-menu-button">
+            <a href="javascript:void(0)">검찰구성</a>
             <em></em>
           </label>
-          <div style="border-bottom: 1px solid #dddddd">
+          <div>
             <ul>
               <li>
-                <a href="javascript:void(0)"> 민원사무 안내 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 민원서식 내려받기 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 사건처리절차 안내 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 열람등사절차 안내 </a>
+                <a href="javascript:void(0)"> 검찰이란?</a>
               </li>
               <li class="drop-on">
-                <a href="javascript:void(0)"> 민원서비스현장 </a>
+                <a href="javascript:void(0)"> 검찰구성원</a>
               </li>
               <li>
-                <a href="javascript:void(0)"> 민원안내전화 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 적극행정제도 소개 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 적극행정 소식란 </a>
+                <a href="javascript:void(0)"> 검사의역할</a>
               </li>
             </ul>
           </div>
-          <!--민원안내-->
-          <!--일반민원-->
-          <input type="checkbox" id="answer02" />
-          <label for="answer02" class="left-menu-button">
-            <a href="javascript:void(0)">일반민원</a>
+          <!--검찰구성-->
+          <!--조직 및 업무-->
+          <input type="checkbox" id="leftmenu02" />
+          <label for="leftmenu02" class="left-menu-button">
+            <a href="javascript:void(0)">조직 및 업무</a>
             <em></em>
           </label>
           <div>
             <ul>
               <li>
-                <a href="javascript:void(0)"> 이용안내 </a>
+                <a href="javascript:void(0)"> 부서별연락처</a>
               </li>
               <li>
-                <a href="javascript:void(0)"> 민원신청/확인 </a>
+                <a href="javascript:void(0)"> 검찰조직구조</a>
               </li>
               <li>
-                <a href="javascript:void(0)"> 110정부민원안내콜센터 </a>
+                <a href="javascript:void(0)"> 층별안내도</a>
               </li>
               <li>
-                <a href="javascript:void(0)"> 공개민원 열람하기 </a>
+                <a href="javascript:void(0)"> 대검찰청 배치표</a>
               </li>
             </ul>
           </div>
-          <!--민원안내-->
-          <!--제증명민원-->
-          <input type="checkbox" id="answer03" />
-          <label for="answer03" class="icon left-menu-button arrow-right">
-            <a href="javascript:void(0)">제증명민원</a>
-            <em></em>
-          </label>
-          <!--제증명민원-->
-          <!--벌과금/사건검색-->
-          <input type="checkbox" id="answer04" />
-          <label for="answer04" class="left-menu-button">
-            <a href="javascript:void(0)">벌과금/사건검색</a>
+          <!--조직 및 업무-->
+          <!--검찰총장소개-->
+          <input type="checkbox" id="leftmenu03" />
+          <label for="leftmenu03" class="left-menu-button">
+            <a href="javascript:void(0)">검찰총장소개</a>
             <em></em>
           </label>
           <div>
             <ul>
-              <li class="icon">
-                <a href="javascript:void(0)"> 사건진행상황조회 </a>
+              <li>
+                <a href="javascript:void(0)"> 총장인사말</a>
               </li>
-              <li class="icon">
-                <a href="javascript:void(0)"> 벌과금납부조회 </a>
+              <li>
+                <a href="javascript:void(0)"> 검찰총장과의 대화</a>
               </li>
-              <li class="icon">
-                <a href="javascript:void(0)"> 재판서 및 통지서 조회 </a>
+              <li>
+                <a href="javascript:void(0)"> 총장동정</a>
               </li>
-              <li class="icon">
-                <a href="javascript:void(0)"> 가납금환급조회 </a>
+              <li>
+                <a href="javascript:void(0)"> 발표연설</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> 역대총장</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> 주요일정</a>
               </li>
             </ul>
           </div>
-          <!--벌과금/사건검색-->
-          <!--자주묻는질문-->
-          <input type="checkbox" id="answer05" />
-          <label for="answer05" class="left-menu-button arrow-right">
-            <a href="javascript:void(0)">자주묻는질문</a>
+          <!--검찰총장소개-->
+          <!--검찰 CI/CM-->
+          <input type="checkbox" id="leftmenu04" />
+          <label for="leftmenu04" class="left-menu-button arrow-right">
+            <a href="javascript:void(0)">검찰 CI/CM</a>
             <em></em>
           </label>
-          <!--자주묻는질문-->
-          <!--자유발언대-->
-          <input type="checkbox" id="answer06" />
-          <label for="answer06" class="left-menu-button arrow-right">
-            <a href="https://www.youtube.com/watch?v=jdTsJzXmgU0&list=PLuHgQVnccGMCeAy-2-llhw3nWoQKUvQck">자유발언대</a>
-            <em></em>
-          </label>
-          <!--자유발언대-->
-          <!--감동직원추천-->
-          <input type="checkbox" id="answer07" />
-          <label for="answer07" class="left-menu-button">
-            <a href="javascript:void(0)">감동직원추천</a>
+          <!--검찰 CI/CM-->
+          <!--검찰역사관-->
+          <input type="checkbox" id="leftmenu05" />
+          <label for="leftmenu05" class="left-menu-button">
+            <a href="javascript:void(0)">검찰역사관</a>
             <em></em>
           </label>
           <div>
             <ul>
+              <li>
+                <a href="javascript:void(0)"> 검찰제도의 변천</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> 복제의 변천</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> 서식의 변천</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> 사건과 이슈</a>
+              </li>
+            </ul>
+          </div>
+          <!--검찰역사관-->
+          <!--대검찰청견학-->
+          <input type="checkbox" id="leftmenu06" />
+          <label for="leftmenu06" class="left-menu-button">
+            <a href="javascript:void(0)">대검찰청견학</a>
+            <em></em>
+          </label>
+          <div>
+            <ul>
+              <li>
+                <a href="javascript:void(0)"> 견학안내</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> 견학신청</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> 견학소감</a>
+              </li>
+            </ul>
+          </div>
+          <!--대검찰청견학-->
+          <!--찾아오시는길-->
+          <input type="checkbox" id="leftmenu07" />
+          <label for="leftmenu07" class="left-menu-button arrow-right">
+            <a href="javascript:void(0)">찾아오시는길</a>
+            <em></em>
+          </label>
+          <!--찾아오시는길-->
+          <!--전국검찰청찾기-->
+          <input type="checkbox" id="leftmenu08" />
+          <label for="leftmenu08" class="left-menu-button arrow-right">
+            <a href="javascript:void(0)">전국검찰청찾기</a>
+            <em></em>
+          </label>
+          <!--전국검찰청찾기-->
+          <!--국가형사사법기록관-->
+          <input type="checkbox" id="leftmenu09" />
+          <label for="leftmenu09" class="left-menu-button">
+            <a href="javascript:void(0)">국가형사사법기록관</a>
+            <em></em>
+          </label>
+          <div>
+            <ul>
+              <li>
+                <a href="javascript:void(0)"> 기록관 소개</a>
+              </li>
               <li class="drop-on">
-                <a href="javascript:void(0)"> 감동직원추천 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 추천서 작성하기 </a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"> 내의견 보기 </a>
+                <a href="javascript:void(0)"> 견학안내 및 신청</a>
               </li>
             </ul>
           </div>
-          <!--감동직원추천-->
+          <!--국가안내 및 신청-->
+          <!--1301 검찰콜센터-->
+          <input type="checkbox" id="leftmenu10" />
+          <label for="leftmenu10" class="left-menu-button">
+            <a href="javascript:void(0)">1301 검찰콜센터</a>
+            <em></em>
+          </label>
+          <div>
+            <ul>
+              <li>
+                <a href="javascript:void(0)"> 콜센터 소개</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> 이용안내</a>
+              </li>
+            </ul>
+          </div>
+          <!--1301 검찰콜센터-->
         </div>
         <div class="left-menu_box">
           <div class="call">
@@ -1798,65 +1847,74 @@
           </div>
         </div>
       </div>
-
       <div class="content">
-        <p>민원서비스헌장</p>
-        <div class="content-box1 book_img">
-          <p class="content-box1_title">민원서비스헌장</p>
-          <p>우리 검찰공무원은 범죄로부터 국민을 보호하고 공정 투명한 법 집행을 통하여</p>
-          <p>정의로운 민주사회를 구현함으로써 국민의 사랑과 신뢰를 받는 공직자가 되기 위하여</p>
-          <p>다음과 같이 실천할 것을 다짐합니다.</p>
+        <p class="mgb-33">찾아오시는길</p>
+        <img src="../img/img_map.png" alt="">
+        <div class="goggle-detail">
+          <a href="javascript void(0)">자세히보기</a>
         </div>
-        <ul class="content_ullist">
+        <ul class="dib direction">
           <li>
-            <p>
-              <span>01</span>
-              모든 국민은 친절한 민원행정 서비스를 받을 권리가 있고, 검찰공무원은 이를 제공할 의무가 있다는 것을 명심하겠습니다.
-            </p>
+            <ul class="padding0 content_ullist">
+              <li class="dib">
+                <p>
+                  <span>주소</span>
+                </p>
+                <p>
+                  서울특별시 서초구 반포대로 157 우편번호(06590)
+                </p>
+              </li>
+              <li class="dib">
+                <p>
+                  <span>안내전화</span>
+                </p>
+                <p>
+                  대검찰청 대표전화 : 국번없이 1301(유료)
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span>교통편안내</span>
+                </p>
+              </li>
+              <li>
+                <ul>
+                  <li>
+                    <ul class="direction-method">
+                      <li class="direction-title ">지하철 이용 시</li>
+                      <li>지하철 2호선 서초역 하차, 6번 출구로 나와서 앞으로 약 300미터 거리</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="direction-method">
+                      <li class="direction-title ">지하철 이용 시</li>
+                      <li>시내버스 : 5413, 730, 405, 149</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+
+
+
+
+
+            </ul>
           </li>
-          <li>
-            <p>
-              <span>02</span>
-              검찰공무원의 직무상 권한은 국민으로부터 위임된 것임을 명심하여 성실하고 겸손한 자세로 국민에게 봉사하겠습니다.
-            </p>
-          </li>
-          <li>
-            <p>
-              <span>03</span>
-              민원은 항상 민원인의 입장에서 생각하며, 친절하고 신속·공정하게 업무를 처리하겠습니다.
-            </p>
-          </li>
-          <li>
-            <p>
-              <span>04</span>
-              민원업무의 처리절차와 민원환경을 지속적으로 점검·개선하여 민원인에게 만족을 드리도록 노력하겠습니다.
-            </p>
-          </li>
-          <li>
-            <p>
-              <span>05</span>
-              불친절한 자세와 부당한 행정처리로 민원인에게 불편과 손해를 끼쳤을 경우 즉시 시정하고 합리적인 보상을 하겠습니다.
-            </p>
-          </li>
-          <li>
-            <p>
-              <span>06</span>
-              민원인의 건설적인 의견이나 제안은 널리 수렴하여 검찰업무 수행과정에 적극 반영하겠습니다.
-            </p>
-          </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
         </ul>
-        <ul class="content_ullist2">
-          <li class="name">대검찰청 운영지원과</li>
-          <li class="email">
-            <a href="">
-              700msk51@spo.go.kr
-            </a>
-          </li>
-        </ul>
-
-
-
-
 
 
 
@@ -2230,10 +2288,10 @@
       <ul>
         <li class="footer_logo">
           <a href="javascript:void(0)">
-            <img src="../beak-1/img/bg_footerlogo.png" alt="" />
+            <img src="../img/bg_footerlogo.png" />
           </a>
         </li>
-        <li class="menu">
+        <li class=" menu">
           <ul>
             <li>
               <a href="javascript:void(0)"> 찾아오시는길 </a>
