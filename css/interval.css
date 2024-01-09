@@ -1,4 +1,7 @@
 /* margin-top */
+.mgt-10 {
+  margin-top: 10px;
+}
 .mgt-13 {
   margin-top: 13px;
 }
@@ -36,6 +39,9 @@
 }
 .pdl-50 {
   padding-left: 50px;
+}
+.pdl-60 {
+  padding-left: 60px;
 }
 /* padding-top*/
 .pdt-10 {

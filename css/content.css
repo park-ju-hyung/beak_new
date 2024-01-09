@@ -335,11 +335,13 @@
   line-height: 1;
 }
 input[id*="answer"],
-input[id*="leftmenu"] {
+input[id*="leftmenu"],
+input[id*="role"] {
   display: none;
 }
 input[id*="answer"] + label,
-input[id*="leftmenu"] + label {
+input[id*="leftmenu"] + label,
+input[id*="role"] + label {
   position: relative;
   display: block;
   padding: 20px;
@@ -349,8 +351,13 @@ input[id*="leftmenu"] + label {
   padding: 10px 40px 10px 10px;
   color: #333333;
 }
+input[id*="role"] + label {
+  border-top: 1px solid #ddd;
+}
+
 input[id*="answer"] + label.arrow-right,
-input[id*="leftmenu"] + label.arrow-right {
+input[id*="leftmenu"] + label.arrow-right,
+input[id*="role"] + label.arrow-right {
   position: relative;
   display: block;
   padding: 0px;
@@ -387,17 +394,20 @@ input[id*="leftmenu"] + label.arrow-right {
 }
 
 input[id*="answer"] + label a,
-input[id*="leftmenu"] + label a {
+input[id*="leftmenu"] + label a,
+input[id*="role"] + label a {
   font-size: 17px;
   line-height: 20px;
   color: #666666;
 }
 input[id*="answer"] + label:hover a:not(.page-now),
-input[id*="leftmenu"] + label:hover a:not(.page-now) {
+input[id*="leftmenu"] + label:hover a:not(.page-now),
+input[id*="role"] + label:hover a:not(.page-now) {
   color: #346d94;
 }
 input[id*="answer"] + label em,
-input[id*="leftmenu"] + label em {
+input[id*="leftmenu"] + label em,
+input[id*="role"] + label em {
   position: absolute;
   top: 70%;
   right: 10px;
@@ -408,21 +418,25 @@ input[id*="leftmenu"] + label em {
   background: url(../img/bg_lnb.png) no-repeat 100% -2px;
 }
 input[id*="answer"] + label.arrow-right em,
-input[id*="leftmenu"] + label.arrow-right em {
+input[id*="leftmenu"] + label.arrow-right em,
+input[id*="role"] + label.arrow-right em {
   background: url(../img/bg_lnb.png) no-repeat 100% -36px;
 }
 input[id*="answer"] + label.arrow-right:hover em,
-input[id*="leftmenu"] + label.arrow-right:hover em {
+input[id*="leftmenu"] + label.arrow-right:hover em,
+input[id*="role"] + label.arrow-right:hover em {
   background: url(../img/bg_lnb.png) no-repeat 100% -48px !important;
 }
 input[id*="answer"] + label.arrow-right a,
-input[id*="leftmenu"] + label.arrow-right a {
+input[id*="leftmenu"] + label.arrow-right a,
+input[id*="role"] + label.arrow-right a {
   display: block;
   width: 84%;
   padding: 10px 25px 10px 10px;
 }
 input[id*="answer"] + label.left-menu-button:hover em,
-input[id*="leftmenu"] + label.left-menu-button:hover em {
+input[id*="leftmenu"] + label.left-menu-button:hover em,
+input[id*="role"] + label.left-menu-button:hover em {
   position: absolute;
   top: 70%;
   right: 10px;
@@ -433,7 +447,8 @@ input[id*="leftmenu"] + label.left-menu-button:hover em {
   background: url(../img/bg_lnb.png) no-repeat 100% -14px;
 }
 input[id*="answer"] + label.left-menu-button.on:hover em,
-input[id*="leftmenu"] + label.left-menu-button.on:hover em {
+input[id*="leftmenu"] + label.left-menu-button.on:hover em,
+input[id*="role"] + label.left-menu-button.on:hover em {
   position: absolute;
   top: 70%;
   right: 10px;
@@ -445,7 +460,8 @@ input[id*="leftmenu"] + label.left-menu-button.on:hover em {
 }
 
 input[id*="answer"] + label.page-now em,
-input[id*="leftmenu"] + label.page-now em {
+input[id*="leftmenu"] + label.page-now em,
+input[id*="role"] + label.page-now em {
   position: absolute;
   top: 70%;
   right: 10px;
@@ -456,14 +472,16 @@ input[id*="leftmenu"] + label.page-now em {
   background: url(../img/bg_lnb.png) no-repeat 100% -23px;
 }
 input[id*="answer"] + label + div,
-input[id*="leftmenu"] + label + div {
+input[id*="leftmenu"] + label + div,
+input[id*="role"] + label + div {
   max-height: 0;
   overflow: hidden;
   font-size: 11px;
 }
 
 input[id*="answer"] + label + div p,
-input[id*="leftmenu"] + label + div p {
+input[id*="leftmenu"] + label + div p,
+input[id*="role"] + label + div p {
   display: inline-block;
   padding: 20px;
 }
@@ -472,8 +490,23 @@ input[id*="answer"]:checked + label + div,
 input[id*="leftmenu"]:checked + label + div {
   max-height: 220px;
 }
+input[id*="role"]:checked + label + div {
+  max-height: 470px;
+}
+input[id*="answer"]:checked + label em,
+input[id*="leftmenu"]:checked + label em,
+input[id*="role"]:checked + label em {
+  position: absolute;
+  top: 70%;
+  right: 10px;
+  width: 30px;
+  height: 12px;
+  margin-top: -15px;
+  display: inline-block;
+  background: url(../img/bg_lnb.png) no-repeat 100% -23px;
+}
 
-.accordion ul li:hover {
+.left-menu > .accordion > div > ul li:hover {
   background: #346d94;
 }
 .accordion ul li:hover a {
@@ -491,14 +524,16 @@ input[id*="leftmenu"]:checked + label + div {
 }
 
 input[id*="answer"]:checked + label + div a,
-input[id*="leftmenu"]:checked + label + div a {
+input[id*="leftmenu"]:checked + label + div a,
+input[id*="role"]:checked + label + div a {
   display: block;
   vertical-align: top;
   color: #666666;
   padding: 3px 30px;
 }
 input[id*="answer"]:checked + label + div ul li.icon:hover a::after,
-input[id*="leftmenu"]:checked + label + div ul li.icon:hover a::after {
+input[id*="leftmenu"]:checked + label + div ul li.icon:hover a::after,
+input[id*="role"]:checked + label + div ul li.icon:hover a::after {
   background: url("../img/blt_newwin2.png") no-repeat right;
   width: 11px;
   height: 11px;
@@ -2324,6 +2359,7 @@ p.accident_text_bottom::before {
   font-weight: bold;
   font-size: 15px;
   position: relative;
+  margin-top: 20px;
 }
 
 .direction-method > li:first-child::before {
@@ -2348,7 +2384,153 @@ p.accident_text_bottom::before {
   letter-spacing: -0.7px;
   color: #333333;
 }
+.bus {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 0;
+  line-height: 0;
+  width: 40px;
+  height: 40px;
+  background-position: 0 0;
+  background: url("../img/ico_bus.png");
+}
+.bus2 {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 0;
+  line-height: 0;
+  width: 40px;
+  height: 40px;
+  background: url("../img/ico_bus.png") 40px 0px;
+}
+.direction-title + ul {
+  position: relative;
+  margin-top: 10px;
+}
+.direction-title + ul > ul > li > p {
+  position: relative;
+  padding-left: 12px;
+  color: #666666;
+  font-size: 14px;
+}
+.direction-title + ul > ul > li > p:nth-child(2) {
+  margin-top: 6px;
+}
+.direction-title + ul > ul > li:nth-child(2) {
+  padding-left: 130px;
+}
+.direction-title + ul > ul > li > p::after {
+  content: "";
+  background: url("../img/blt_list.png");
+  position: absolute;
+  display: block;
+  width: 3px;
+  height: 3px;
+  top: 7px;
+  left: 0px;
+}
 
+/** 검사의 역할  **/
+.role {
+  border-top: 1px solid black;
+  margin-top: 15px;
+}
+.role > .accordion > .content-box3 {
+  margin-top: 0px;
+  padding: 0px;
+  border: none;
+}
+
+/* 부서별 연락처 */
+.departmentNumber > li:first-child {
+  width: 200px;
+}
+
+.departmentNumber li {
+  display: inline-block;
+  vertical-align: top;
+}
+.departmentNumber > li:nth-child(2) > ul > li > p:first-child {
+  font-weight: bold;
+  margin-bottom: 7px;
+  font-size: 14px;
+}
+.departmentNumber-number,
+.departmentNumber-fax {
+  color: #666;
+  font-size: 13px;
+  position: relative;
+  padding-left: 20px;
+}
+.departmentNumber-fax {
+  margin-top: 10px;
+}
+.departmentNumber-number::before {
+  content: "";
+  background-image: url("../img/ico_tel.png");
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0px;
+  top: 3px;
+}
+.departmentNumber-fax::before {
+  content: "";
+  background-image: url("../img/ico_fax.png");
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0px;
+  top: 3px;
+}
+.departmentNumber > li > ul > li:not(:last-child) {
+  padding-right: 80px;
+}
+
+/* 대검찰청 배치표 */
+
+.content-box1.table_img {
+  text-align: right;
+}
+
+.content-box1.table_img::after {
+  content: none;
+}
+.content-box1.table_img > a.Download {
+  padding: 0 35px;
+}
+
+.content-box1.table_img > a.Download::after {
+  top: 8px;
+}
+
+/* 층별안내도 */
+.floor {
+  border-top: 2px solid black;
+}
+.floor > ul > li {
+  border-bottom: 1px solid #ddd;
+  padding: 23px 0;
+}
+.floor > ul > li > ul > li:first-child {
+  color: #4d6d91;
+  font-size: 30px;
+  line-height: 26px;
+  padding-left: 30px;
+  width: 150px;
+  font-weight: bold;
+}
+.floor > ul > li > ul > li:first-child > span {
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+.floor + .sub-title4 {
+  margin-top: 20px;
+}
 /* 첫번째 항목이 blue , 아래들은 점 처리 검은색 리스트  */
 .ulstyle-1 > li:first-child {
   padding-bottom: 5px;
@@ -2370,6 +2552,30 @@ p.accident_text_bottom::before {
   height: 3px;
   top: 10px;
   left: 0px;
+}
+.floor > ul > li > ul > li:nth-child(2) ul > li {
+  position: relative;
+  font-size: 13px;
+  color: #666;
+  vertical-align: middle;
+}
+.floor > ul > li > ul > li:nth-child(2) ul > li:not(:first-child) {
+  margin-left: 70px;
+}
+.floor > ul > li > ul > li:nth-child(2) ul > li::after {
+  content: "";
+  background: url("../img/blt_list.png");
+  position: absolute;
+  display: block;
+  width: 3px;
+  height: 3px;
+  top: 7px;
+  left: -10px;
+}
+
+.floor-bottom {
+  width: 600px;
+  vertical-align: top !important;
 }
 
 /* 첫번째 항목이 검은색 , 아래들은 점 처리 검은색 리스트  */
@@ -2397,4 +2603,17 @@ p.accident_text_bottom::before {
   height: 3px;
   top: 12px;
   left: 0px;
+}
+
+/* 모든 항목 #6666 간격 20px font 13 */
+.ulstyle-3 {
+  padding: 35px 30px;
+}
+
+.ulstyle-3 > li {
+  color: #666;
+  font-size: 13px;
+}
+.ulstyle-3 > li:not(:first-child) {
+  margin-top: 20px;
 }

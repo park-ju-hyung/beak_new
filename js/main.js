@@ -229,6 +229,12 @@ $("#detail-out").click(function () {
 
 
 
+
+
+
+
+
+
 /* mb - 전체메뉴 */
 $(".mobilesidebar-content2").click(function (e) {
   var el = $(e.target).closest('li')
